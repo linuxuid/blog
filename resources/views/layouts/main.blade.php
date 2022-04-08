@@ -46,8 +46,9 @@
         @section('content')
             <main>
                 <div class="content">
-
+     
                 </div>
+
             </main>        
         @show
 

@@ -1,45 +1,36 @@
-main .content .articles_content {
-    width: 1002.5px;
+main .content {
+    height: 100%;
+}
+
+.content .article {
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    box-sizing: border-box;
 }
 
-main .content .articles_content .drugs {
-    padding: 20px;
-    position: relative;
-    bottom: 48px;
-    background: rgb(8, 189, 250);
-} 
-
-main .content .articles_content .drugs span {
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-main .content .articles_content .table table{
-    width: 100%;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+.content .article p {
     text-align: left;
-    border-collapse: collapse;
-    border-spacing: 5px;
-    background: #808080;
-    color: #656665;
-    border-radius: 20px;
 }
 
-main .content .articles_content .table thead{
-    background: black;
-    color: white;
+.content .article .right {
+    width: 200px;
+    height: 500px;
+    border: 1px solid black;
+    float: right;
+    position: absolute;
+    bottom: 100px;
+    left: 985px;
 }
+
+
 
 /* adaptive */
-@media (max-width: 1280px){
+/* @media (max-width: 1280px){
     main .content {
         width: 1050px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 10px;
     }
 }
 
@@ -74,4 +65,4 @@ main .content .articles_content .table thead{
 
 @media (min-width: 280px) and (max-width: 653px) {
 
-}
+} */

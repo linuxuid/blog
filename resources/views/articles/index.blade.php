@@ -16,32 +16,29 @@ rel="stylesheet">
 @section('content')
 <main>
     <div class="content">
-        <div class="articles_content">
-                <div class="drugs">
-                    <span>Наркотики</span>
-                </div>
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Статьи</td>
-                                <td>Посты</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Наркотические вещества</td>
-                            </tr>    
-                            <tr>
-                                <td>Зависимость от наркотиков</td>
-                            </tr>
-                            <tr>
-                                <td>Эффекты от приема</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <div class="article">
+            <div class="top">
+                <span>
+                    Hello
+                </span>
+            </div>
+            <p>
+                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+                                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+                                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello                hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello  hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+            </p>
+            <div class="right">
+            
+            </div>
         </div>
+
     </div>
 </main>        
 @endsection

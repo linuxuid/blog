@@ -10,4 +10,9 @@ class HomePageController extends Controller
     {
         return view('home.index');
     }
-}
+
+    public function rulesPage()
+    {
+        return view('home.rules');
+    }
+} 

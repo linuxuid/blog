@@ -1,0 +1,77 @@
+main .content .articles_content {
+    width: 1002.5px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+main .content .articles_content .drugs {
+    padding: 20px;
+    position: relative;
+    bottom: 48px;
+    background: rgb(8, 189, 250);
+} 
+
+main .content .articles_content .drugs span {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main .content .articles_content .table table{
+    width: 100%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    background: #808080;
+    color: #656665;
+    border-radius: 20px;
+}
+
+main .content .articles_content .table thead{
+    background: black;
+    color: white;
+}
+
+/* adaptive */
+@media (max-width: 1280px){
+    main .content {
+        width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1024px){
+    main .content {
+        display: flex;
+        width: 88.5%;
+    }
+}
+
+@media (max-width: 768px){
+    main .content {
+        display: flex;
+        width: 89.5%;
+    }
+}
+
+@media (max-width: 600px){
+    main .content {
+        display: flex;
+        width: 91.5%;
+    }
+}
+
+@media (max-width: 480px){
+   
+}
+
+@media (min-width: 360px) and (max-width: 740px){
+
+}
+
+@media (min-width: 280px) and (max-width: 653px) {
+
+}

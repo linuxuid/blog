@@ -3,44 +3,59 @@
 @section('links')
     <link rel="stylesheet" href="{{ asset('/main.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('/css/homepage/index.css') }}">        
+    <link rel="stylesheet" href="{{ asset('/css/homepage/index.css') }}">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('/img/keys.png') }}"/>     
 @endsection
 
 @section('content')
-<main>
-    
+<main>   
     <div class="content">
         <div class="index_content">
-            <h2>
-                Want Tips For Optimizing Your Life And Career?
-            </h2>
-            <p>
-                I’m Darius Foroux, an entrepreneur, author, and investor. I’ve been sharing actionable tips for optimizing your life and work every week since 2015. My ideas have been featured in TIME, NBC, Fast Company, Inc., Observer, and other publications.
-            </p>
-            <p>
-                And I’m continually researching ways we can effectively improve ourselves so we can live with inner joy, tranquility, and certainty. To me, that’s the ultimate goal of personal growth. When you can do work you enjoy, especially on your own terms, you’ll have pleasure every day.
-            </p>
-            <p>
-                I write for people who are committed to personal growth, no matter what the external circumstances are. People who want to become better at what they do—one step at a time. That’s also my goal. And my newsletter is where I publish my new insights first.
-            </p>
-            <p>
-                Whether you’re an entrepreneur, artist, programmer, or executive, you’re welcome to join. Every Monday, I’ll send you an article with new useful insights.
-            </p>
-            <p>
-                I’ll also send you my free Growth Kit, a bundle of 6 resources with proven tips for optimizing your life and work. It includes 4 short eBooks, a checklist, and an infographic. Enter your email to join the insiders list and receive the Growth Kit.
-            </p>
-            <p>
-                And I’m continually researching ways we can effectively improve ourselves so we can live with inner joy, tranquility, and certainty. To me, that’s the ultimate goal of personal growth. When you can do work you enjoy, especially on your own terms, you’ll have pleasure every day.
-            </p>
-            <p>
-                I write for people who are committed to personal growth, no matter what the external circumstances are. People who want to become better at what they do—one step at a time. That’s also my goal. And my newsletter is where I publish my new insights first.
-            </p>
-            <p>
-                Whether you’re an entrepreneur, artist, programmer, or executive, you’re welcome to join. Every Monday, I’ll send you an article with new useful insights.
-            </p>
-            <p>
-                I’ll also send you my free Growth Kit, a bundle of 6 resources with proven tips for optimizing your life and work. It includes 4 short eBooks, a checklist, and an infographic. Enter your email to join the insiders list and receive the Growth Kit.
-            </p>
+          <h2>
+             Как возможно вырваться из тесков "системы" и стать по-настоящему свободным?
+          </h2>
+          <p>
+              Этот Блог создан как обычный интернет-ресурс где будут опубликовываться разного рода информация которая может быть кому-то полезным но для кого-то нет, главные мотивы и внутреннее вдохновение которые послужило триггером для создания этого полная тотальная цензура и диктатура и абсолютное ущемление прав людей и их права свободно общаться на темы которые их интересуют. Я считаю что каждый имеет право высказывать то что он хочет сказать НО аргументировано и обоснованно.
+          </p>
+          <p>
+               Я считаю что быть свободным - это обрести способность поступать так как хочешь именно ты, полностью избавиться от чувства страха и довериться себе, познать себя и взять ответственность за свою жизнь. Свобода это - выбор.
+          </p>
+          <p>
+              "Что такое просветление" <a href="https://iphras.ru/uplfile/philec/gou/kant.pdf" target="_blank">Иммануил Кант</a> 
+              или же "развитие понятия свободы личности"<a href="https://cyberleninka.ru/article/n/razvitie-ponyatiya-svobody-lichnosti-v-filosofii-gegelya/viewer" target="_blank"> Георг Вильгельм Фридрих Гегель</a> или же "Гречкосей, Р. Н. Понятие свободы в философии Э. Фромма и Ф.Ницше как проявление человеческой сущности" <a href="https://moluch.ru/archive/57/7865/" target="_blank">Гречкосей Р. Н.</a> я считаю что каждый сам сможет сформулировать для себя то состояние "просветления" и достичь самореализации и сможет найти ответы в себе самом.
+              Я всю свою жизнь желаю достичь самореализации и состоянии "Мокши" <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BA%D1%88%D0%B0_(%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D0%B8%D1%8F)#:~:text=%D0%9C%D0%BE%CC%81%D0%BA%D1%88%D0%B0%20(%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80.,%D1%81%D1%82%D1%80%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%B8%20%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B9%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F." target="_blank">Источник</a>
+          </p>
+          <p>
+              Я не исключаю что многоуважаемый <a href="https://rkn.gov.ru/?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com" target="_blank">Роскомнадзор</a> заблокирует этот ресурс по подозрению в каких-то противоправных действиях. Именно это один из тех спусковых механизмов которые и служат для того чтобы сделать хоть что-то для того чтобы информация и разного рода знания были доступны и чтобы те кто хочет что-то сказать непосредственно - <span>говорили.</span>
+          </p>
+          <p>
+              Я не собираюсь никого призывать к каким-то конкретным действиям или же организовывать какое-то преступное сообщество и устраивать революции, единственное к чему я могу на самом деле призвать так это - <span>думать своей головой и жить в согласии с собой и со своими действиями</span>, отдавать отчёт в том что вы собираетесь сделать или уже сделали, пожалуйста будьте благоразумны и покажите этот пример осознанности и благоразумия другим людям, вашим ближним. 
+          </p>
+          <p>
+              Если вам интересно и вам есть что рассказать и сказать то предлагаю вам опубликовать истории на следующие темы:
+          </p>
+           <ol>
+               <li>
+                    <span>ИТ направление:</span> программирование, сетевое администрирование, способы и механизмы работы, мануалы и руководства, все что вас интересует и может помочь другим.
+                </li>
+               <li>
+                   <span>Darkweb:</span> ссылки на разные интересные ресурсы, так же новости которые могут быть интересны обычному пользователю, часто можно встретить руководства которые пригодятся вам в обычной жизни именно там.
+               </li>
+               <li>
+                <span>Преступления:</span> касается любых видов преступлений или же событий которые нельзя оставить без внимания и вы бы хотели поделиться с другими, военных преступлений (массовых убийств, изнасилований, пыток) и т.д</li>
+               <li>
+                <span>Истории:</span> Абсолютно разноплановые истории, естественно не содержащих оскорбляющих подтекстов (именно с вашей стороны)
+                </li>
+                <li>
+                    <span>Наркотики:</span> разные исследования или новости, описания эффектов от приема различных эффектов, вас личный опыт употребления чего-либо тут нет никаких ограничений.
+                </li>
+           </ol>
+           <p>
+                Разумеется предложенные мною темы выше не являются ограничением в обсуждении чего-либо, если у вас есть какие-то вопросы или предложения своих тем, <a href="mailto:freehaven440@outlook.com">дайте мне знать.</a>
+           </p>
         </div>
     </div>
 </main>      

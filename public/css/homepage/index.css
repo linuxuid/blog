@@ -5,6 +5,42 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.content .index_content p a {
+    text-decoration: none;
+    color: blue;
+    font-family: cursive;
+}
+
+.content .index_content p a:hover {
+    color: red;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.content .index_content p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.content .index_content p:nth-child(5){
+    margin-top: 40px;
+}
+
+.content .index_content ol li {
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.content .index_content ol li span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content .index_content p:last-child{
+    margin-top: 25px;
+}
+
 main .content {
     height: 100%;
 }
@@ -12,6 +48,7 @@ main .content {
 .content h2 {
     font-size: 35px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .content p {

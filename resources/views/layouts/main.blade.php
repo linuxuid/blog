@@ -33,7 +33,7 @@
                     </div>
                     <input type="checkbox" name="toogle_search" id="search" class="toogleSearch">
                     <label for="search" class="toogleSearch"><i class="fa fa-search"></i></label>
-                        <form class="search" action="/" method="GET">
+                    <form class="search" action="/" method="GET">
                         <input type="text" placeholder="искать">
                         <button>
                             <i class="fa fa-search"></i>
@@ -58,13 +58,12 @@
                     <a href="#">Ссылки</a>
                     <a href="#">Опубликовать свою статью</a>
                     <a href="#">Контакты</a>
-                <div class="icons">
-                    <a href="/" class="fa fa-twitter"></a>
-                    <a href="/" class="fa fa-telegram"></a>
-                    <a href="/" class="fa fa-whatsapp"></a>
-                </div>
+                        <div class="icons">
+                            <a href="/" class="fa fa-twitter"></a>
+                            <a href="/" class="fa fa-telegram"></a>
+                            <a href="/" class="fa fa-whatsapp"></a>
+                        </div>
                 </nav>
-
             </footer>        
         @show
     </div>

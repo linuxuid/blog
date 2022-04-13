@@ -26,10 +26,9 @@
                     <label for="menu" class="toogleMenu"><i class="fa fa-bars"></i>Menu</label>
                     <div class="subMenu">
                             <a href="/">Главная</a>
-                            <a href="{{ route('articles.index') }}">Статьи</a>
+                            <a href="{{ route('articles.index') }}">Категории</a>
                             <a href="{{ route('rules') }}">Правила</a>
                             <a href="/">Книги</a>
-                            <a href="/">Регистрация</a>
                     </div>
                     <input type="checkbox" name="toogle_search" id="search" class="toogleSearch">
                     <label for="search" class="toogleSearch"><i class="fa fa-search"></i></label>

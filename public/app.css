@@ -10,14 +10,21 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+header {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 header {
 	height: 100px;
 	padding: 20px;
 }
 
 header nav, .search {
-	border-top: 1px solid lightslategrey;
-    border-bottom: 1px solid lightslategrey;
+	border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 
 /* bars menu */
@@ -72,7 +79,8 @@ header nav .dropdown-content {
 	display: none;
 	position: absolute;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	background: white;
+	/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
 	z-index: 1;
   }
   
@@ -195,8 +203,8 @@ footer {
 }
 
 footer .menu_footer{
-	border-top: 1px solid lightslategrey;
-    border-bottom: 1px solid lightslategrey;
+	border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 
 footer .menu_footer {
@@ -335,7 +343,7 @@ footer .icons a:nth-child(2){
 
 	main .content {
 		margin-right: auto;
-		width: 1100px;
+		width: 100%;
 	}
 
     footer .menu_footer {

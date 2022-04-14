@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\HomePageController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +22,13 @@ Route::get('/', [HomePageController::class, 'index']);
 Route::get('/rules', [HomePageController::class, 'rulesPage'])->name('rules');
 
 /**
- * ArticlesController , articles and categories
+ * CategoriesController show index
  */
-Route::get('/articles', [ArticlesController::class, 'index'])->name('articles.index');
+Route::get('/categories', [CategoriesController::class, 'index'])->name('categories.index');
+
+/**
+ * upload data from CategoriesController
+ */
+Route::get('/create-categories', [CategoriesController::class, 'create'])->name('categories.create');
+
+Route::post('/upload-categories', [CategoriesController::class, 'store'])->name('categories.store');

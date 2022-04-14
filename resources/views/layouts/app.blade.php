@@ -7,6 +7,7 @@
     <title>App name - @yield('title', 'Personal')</title>
    @section('links')
         <link rel="stylesheet" href="{{ asset('/app.css') }}">
+        <link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    @show 
 </head>
@@ -24,6 +25,7 @@
                 <a href="#">Статьи</a>
                 <a href="#">Правила</a>
                 <a href="#">Книги</a>
+                <a href="{{ route('categories.create') }}">Создать категорию</a> 
                     <div class="dropdown">
                         <button class="dropbtn">
                             Мануалы
@@ -35,6 +37,7 @@
                         <a href="#">Ссылка 3</a>
                     </div>    
                     </div>
+                       
             </div>        
         </nav>  
         <div class="search">     

@@ -315,14 +315,15 @@ footer .icons a:nth-child(2){
 		padding: 10px;
 		position: absolute;
 		left: 15px;
-		top: 300px;
+		top: 420px;
 	}
 
 	header nav .dropdown .dropdown-content {
 		/* display: block;  */
 		position: absolute;
-		left: 550px;
-		top: 360px;
+		background-color: rgba(0,0,0,0.2);
+		left: 640px;
+		top: 490px;
 	}
 
 	header nav label.toogleMenu{
@@ -368,7 +369,7 @@ footer .icons a:nth-child(2){
 
 	header nav .subMenu {
         height: 100vh;
-        width: 165vh;
+        width: 135vh;
         position: fixed;
         left: 0;
         top: 0;
@@ -381,8 +382,8 @@ footer .icons a:nth-child(2){
 	header nav .dropdown .dropdown-content {
 		/* display: block;  */
 		position: absolute;
-		left: 390px;
-		top: 360px;
+		left: 515px;
+		top: 490px;
 	}
 
 	header .search form {
@@ -429,7 +430,7 @@ footer .icons a:nth-child(2){
 
 	header nav .subMenu {
         height: 100vh;
-        width: 60vh;
+        width: 80vh;
         position: fixed;
         left: 0;
         top: 0;
@@ -443,7 +444,7 @@ footer .icons a:nth-child(2){
 		/* display: block;  */
 		position: absolute;
 		left: 230px;
-		top: 360px;
+		top: 460px;
 	}
 
 	header nav .dropdown .dropbtn{
@@ -451,13 +452,13 @@ footer .icons a:nth-child(2){
 		padding: 10px;
 		position: absolute;
 		left: 15px;
-		top: 320px;
+		top: 420px;
 	}
 
 	header nav .dropdown .dropdown-content {
 		position: absolute;
-		left: 180px;
-		top: 370px;
+		left: 320px;
+		top: 490px;
 	}
 
 	main .right {

@@ -71,7 +71,7 @@
     <footer>
         <nav class="menu_footer">
             <a href="#">Ссылки</a>
-            <a href="#">Опубликовать свою статью</a>
+            <a href="{{ route('articles.create') }}">Опубликовать свою статью</a>
             <a href="#">Контакты</a>
                 <div class="icons">
                     <a href="/" class="fa fa-twitter"></a>

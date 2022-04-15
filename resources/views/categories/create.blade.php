@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="{{ asset('/app.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('/css/categories/create.css') }}"> 
+    <link rel="stylesheet" href="{{ asset('/css/error/error.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -56,28 +57,51 @@
         <main>
             <div class="content">
                 <div class="container">
-                    <form method="post" action="{{ route('categories.store') }}" 
-                          enctype="multipart/form-data">
+                    
+                    <form method="post" action="{{ route('categories.store') }}" enctype="multipart/form-data">
                         @csrf
-                            <label for="name">
-                                Имя
-                            </label>
-                            <input name="name" placeholder="имя категории" id="name">
+                        <h2>Создать новую категорию</h2>
+                                <label for="name">
+                                    Имя
+                                </label>
+                                   <input name="name" placeholder="имя категории" id="name" value="{{ old('name') }}">
+                        @error('name')
+                            <span class="errorMessage">{{ $message }}</span>
+                        @enderror
 
-                            <label>
-                                Описание
-                            </label>
-                            <input name="description" placeholder="описание категории" id="description">
-
-                            <label for="image">
-                                Добавить изображение
-                            </label>
-                            <input type="file" name="image" id="image">    
+                                <label for="description">
+                                    Описание
+                                </label>
+                                    <input type="text" name="description" id="description" value="{{ old('description') }}">
+                        @error('description')
+                            <span class="errorMessage">{{ $message }}</span>
+                        @enderror
+                                <label for="description_right">
+                                    Описание для статьи
+                                </label>
+                                    <input type="text" name="description_right" id="description_right" value="{{ old('description_right') }}">
+                        @error('description_right')
+                            <span class="errorMessage">{{ $message }}</span>
+                        @enderror
+                                <label for="image">
+                                    Добавить изображение
+                                </label>
+                                    <input type="file" name="image" id="image">    
 
                             <button>
                                 Опубликовать
                             </button>
-                    </form>
+                        </form>
+                            <!-- error messages -->
+                            <div class="error_reporting">
+                                @if ($errors->any())
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>    
+                                        @endforeach
+                                    </ul>
+                                @endif
+                            </div>
                   </div>
             </div>
         </main>

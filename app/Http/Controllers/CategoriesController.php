@@ -36,6 +36,7 @@ class CategoriesController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required',
+            'description_right' => 'required',
             'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:5048'
         ]);
 
@@ -53,6 +54,7 @@ class CategoriesController extends Controller
         $category = Category::create([
             'name' => $request->input('name'),
             'description' => $request->input('description'),
+            'description_right' => $request->input('description_right'),
             'image' => $filename
         ]);
         if($category){

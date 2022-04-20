@@ -1,0 +1,64 @@
+header nav .subMenu a > span {
+    color: red;
+}
+
+header nav .subMenu .dropdown {
+    float: right;
+}
+
+header nav .subMenu .dropdown .dropdown-content {
+    background-color: white;
+}
+
+header nav .subMenu .dropdown .dropdown-content form {
+    background: white;
+    padding: 10px;
+    width: 0;
+}
+
+header nav .subMenu .dropdown .dropdown-content form button {
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    left: 15px;
+}
+
+header nav .subMenu .dropdown .dropdown-content form button:hover {
+    color: aqua;
+}
+
+main .content .success_content {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .content .success_content p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:1280px) { 
+    header nav .subMenu a:nth-child(5) {
+        display: none;
+    }
+
+    header nav .subMenu .dropdown .dropbtn {
+        position: absolute;
+        z-index: 1;
+        top: 350px;
+    }
+
+
+	header nav .subMenu .dropdown .dropdown-content {
+		/* display: block;  */
+		position: absolute;
+		/* background-color: rgba(0,0,0,0.2) */
+        top: 420px;
+        left: 530px;
+	}
+}

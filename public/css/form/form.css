@@ -34,6 +34,13 @@ main .content {
 .content .container form input[type="text"] {
     width: 100%;
     padding: 10px;
+    border:1px solid lightgray;
+}
+
+.content .container form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border:1px solid lightgray;
 }
 
 .content .container form textarea {

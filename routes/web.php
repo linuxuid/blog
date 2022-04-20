@@ -5,6 +5,9 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\BooksCategoriesController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\LoginAndLogOutController;
+use App\Http\Controllers\RegisterController;
+use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 /**
  * HomePageController , main page , rules and etc.. 
  */
-Route::get('/', [HomePageController::class, 'index']);
+Route::get('/', [HomePageController::class, 'index'])->name('home.index');
 Route::get('/rules', [HomePageController::class, 'rulesPage'])->name('rules');
 
 /**
@@ -33,7 +36,6 @@ Route::get('/categories', [CategoriesController::class, 'index'])->name('categor
  * upload data from CategoriesController
  */
 Route::get('/create-categories', [CategoriesController::class, 'create'])->name('categories.create');
-
 Route::post('/upload-categories', [CategoriesController::class, 'store'])->name('categories.store');
 
 /**
@@ -48,3 +50,19 @@ Route::get('/articles/{id}/{subArticle_id}', [ArticlesController::class, 'show']
 Route::get('/create-article', [ArticlesController::class, 'create'])->name('articles.create');
 Route::post('/upload-article', [ArticlesController::class,'store'])->name('articles.store');
 
+/**
+ * Auth form
+ */
+
+ // register
+Route::get('/register', [RegisterController::class, 'create'])->name('register.create');
+Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+
+// authorization
+Route::get('login', [LoginAndLogOutController::class, 'create'])->name('login.create');
+Route::post('login', [LoginAndLogOutController::class, 'store'])->name('login.post');
+
+// logout
+Route::post('/login-success', [LoginAndLogOutController::class, 'destroy'])->name('login.delete');
+
+Route::get('/login-success', [LoginAndLogOutController::class, 'loginPage'])->name('login.success');

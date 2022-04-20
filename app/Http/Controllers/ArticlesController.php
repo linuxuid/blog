@@ -56,5 +56,12 @@ class ArticlesController extends Controller
             return redirect()->route('articles.index', ['id' => $article->id]);
         }
     }
+
+    public function show($id)
+    {
+        return view('articles.show', [
+            'articles' => Article::find($id)
+        ]);
+    }
 }
 

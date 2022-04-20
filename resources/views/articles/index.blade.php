@@ -13,18 +13,17 @@
 
 @section('content')
     <main>
-        @foreach ($categories->articles as $article)            
-            <div class="content">
-                <div class="content_description">
+        <div class="content">
+            <div class="content_description">
+                @foreach ($categories->articles as $article)  
                     <h2><a href="">{{ $article->name }}</a></h2>
                     
                     <a href="#"><img src="/images/{{ $article->image }}" alt="{{ $article->image }}"></a>   
                     <p>
                         {{ $article->slug }}
                     </p>
-                
                     <div class="btn">
-                        <form method="GET" action="#">    
+                        <form method="GET" action="/articles/{{ $article->id }}/{{ $categories->id }}">    
                             <button>
                                 продолжить читать
                             </button>
@@ -33,10 +32,10 @@
                     <div class="space">
 
                     </div>
+                    @endforeach
                 </div>
             </div>
-        @endforeach
-    
+        
     <!-- right sidebar -->
             <div class="right">
                 <span>{{ $categories->name }}</span>

@@ -30,9 +30,6 @@ main .content .content_description a img {
     height: 550px;
 }
 
-main .content .content_description h2,content .content_description p {
-    text-align: center;
-}
 
 main .content .content_description h2 {
     font-size: 28px;

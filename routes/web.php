@@ -41,6 +41,7 @@ Route::post('/upload-categories', [CategoriesController::class, 'store'])->name(
  */
 Route::get('/articles/{id}', [ArticlesController::class, 'index'])->name('articles.index');
 
+Route::get('/articles/{id}/{subArticle_id}', [ArticlesController::class, 'show'])->name('articles.show');
 /**
  * create and upload articles
  */

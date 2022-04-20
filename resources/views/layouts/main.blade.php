@@ -28,7 +28,6 @@
                             <a href="/">Главная</a>
                             <a href="{{ route('categories.index') }}">Категории</a>
                             <a href="{{ route('rules') }}">Правила</a>
-                            <a href="/">Книги</a>
                     </div>
                     <input type="checkbox" name="toogle_search" id="search" class="toogleSearch">
                     <label for="search" class="toogleSearch"><i class="fa fa-search"></i></label>

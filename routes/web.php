@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\BooksCategoriesController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\HomePageController;
 use Illuminate\Support\Facades\Route;
@@ -44,3 +46,4 @@ Route::get('/articles/{id}', [ArticlesController::class, 'index'])->name('articl
  */
 Route::get('/create-article', [ArticlesController::class, 'create'])->name('articles.create');
 Route::post('/upload-article', [ArticlesController::class,'store'])->name('articles.store');
+

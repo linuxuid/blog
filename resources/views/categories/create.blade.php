@@ -22,8 +22,7 @@
                 <a href="/">Главная</a>
                 <a href="{{ route('categories.index') }}">Категории</a>
                 <a href="#">Статьи</a>
-                <a href="#">Правила</a>
-                <a href="#">Книги</a>
+                <a href="{{ route('rules') }}">Правила</a>
                     <div class="dropdown">
                         <button class="dropbtn">
                             Мануалы
@@ -72,7 +71,7 @@
                                 <label for="description">
                                     Описание
                                 </label>
-                                    <input type="text" name="description" id="description" value="{{ old('description') }}">
+                                    <textarea type="text" name="description" id="description" value="{{ old('description') }}"></textarea>
                         @error('description')
                             <span class="errorMessage">{{ $message }}</span>
                         @enderror

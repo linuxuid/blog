@@ -22,9 +22,8 @@
 
             <div class="subMenu">
                 <a href="/">Главная</a>
-                <a href="#">Статьи</a>
-                <a href="#">Правила</a>
-                <a href="#">Книги</a>
+                <a href="">Статьи</a>
+                <a href="{{ route('rules') }}">Правила</a>
                 <a href="{{ route('categories.create') }}">Создать категорию</a> 
                     <div class="dropdown">
                         <button class="dropbtn">

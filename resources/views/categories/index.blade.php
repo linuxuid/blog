@@ -10,6 +10,7 @@
 <link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
 @endsection
 
+
 @section('content')
     <main>
         <!-- main content -->

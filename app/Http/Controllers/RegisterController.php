@@ -26,6 +26,6 @@ class RegisterController extends Controller
 
         auth()->login($users);
 
-        return redirect('login.success')->with('success', 'вы успешно вошли на сайт');
+        return redirect()->route('login.success')->with('success', 'вы успешно вошли на сайт');
     }
 }

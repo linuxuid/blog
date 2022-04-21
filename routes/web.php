@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\BooksCategoriesController;
@@ -66,3 +67,8 @@ Route::post('login', [LoginAndLogOutController::class, 'store'])->name('login.po
 Route::post('/login-success', [LoginAndLogOutController::class, 'destroy'])->name('login.delete');
 
 Route::get('/login-success', [LoginAndLogOutController::class, 'loginPage'])->name('login.success');
+
+/**
+ * Admin Controll panel
+ */
+Route::get('/admin-control', [AdminController::class, 'index'])->name('admin.index');

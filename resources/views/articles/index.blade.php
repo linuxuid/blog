@@ -16,9 +16,9 @@
         <div class="content">
             <div class="content_description">
                 @foreach ($categories->articles as $article)  
-                    <h2><a href="">{{ $article->name }}</a></h2>
+                    <h2><a href="/articles/{{ $article->id }}/{{ $categories->id }}">{{ $article->name }}</a></h2>
                     
-                    <a href="#"><img src="/images/{{ $article->image }}" alt="{{ $article->image }}"></a>   
+                    <a href="/articles/{{ $article->id }}/{{ $categories->id }}"><img src="/images/{{ $article->image }}" alt="{{ $article->image }}"></a>   
                     <p>
                         {{ $article->slug }}
                     </p>

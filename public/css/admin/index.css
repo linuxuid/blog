@@ -1,0 +1,47 @@
+.wrapper {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+
+header nav .subMenu a:nth-child(4) > span{
+    color: red;
+}
+
+main .content {
+    width: 87.5%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .content .admin_content h2{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+main .content .admin_content p {
+    font-size: 18px;
+}
+
+main .content .admin_content form button{
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    border: none;
+    background: rgba(46, 179, 255, 0.7);;
+    cursor: pointer;
+}
+
+main .content .admin_content form button:hover {
+    background: rgba(17, 77, 154, 0.7);
+    transition: 0.5s;
+}
+
+@media (max-width:1280px) {
+    header nav .subMenu a:nth-child(4){
+        display: none;
+    }   
+}

@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="wrapper">
-    @section('header')
+    @section('header') 
     <header>
         <nav>
             <input type="checkbox" name="toogle" id="menu" class="toogleMenu">
@@ -24,7 +24,7 @@
                 <a href="/">Главная</a>
                 <a href="">Статьи</a>
                 <a href="{{ route('rules') }}">Правила</a>
-                <a href="{{ route('categories.create') }}">Создать категорию</a> 
+                <a href="{{ route('admin.index') }}">Панель администратора</a>
                     <div class="dropdown">
                         <button class="dropbtn">
                             Мануалы
@@ -70,7 +70,6 @@
     <footer>
         <nav class="menu_footer">
             <a href="#">Ссылки</a>
-            <a href="{{ route('articles.create') }}">Опубликовать свою статью</a>
             <a href="#">Контакты</a>
                 <div class="icons">
                     <a href="/" class="fa fa-twitter"></a>

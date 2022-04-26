@@ -5,10 +5,15 @@
 	box-sizing: border-box;
 }
 
+.background {
+    background-color: #e5eff4;
+}
+
 .wrapper {
 	width: 1100px;
     margin-left: auto;
     margin-right: auto;
+	background: white;
 }
 
 header {
@@ -196,29 +201,26 @@ footer {
 	padding: 20px;
 }
 
+/* footer */
 footer {
     height: 100px;
     padding: 20px;
     width: 100%;
 }
 
-footer .menu_footer{
-	border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
-}
-
 footer .menu_footer {
-    width: 1050px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
-	margin-top: 10px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
     padding: 10px;
 }
 
 footer .menu_footer a{
     margin: 15px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
 }
@@ -248,8 +250,16 @@ footer .icons a:nth-child(2){
 
 /* adaptive */
 @media (max-width: 1280px){
+	.background {
+		background: white;
+	}
+
 	.wrapper {
 		width: 100%;
+	}
+
+	header {
+	 width: 100%;
 	}
 	
 	header nav, .search {
@@ -263,6 +273,7 @@ footer .icons a:nth-child(2){
 		float: right;
 		position: relative;
 		top: 2px;
+		right: 100px;
 	}  
 
 	header .search form {
@@ -343,9 +354,13 @@ footer .icons a:nth-child(2){
 	}
 
 	main .content {
-		margin-right: auto;
 		width: 100%;
 	}
+/* 
+	footer {
+		position: relative;
+		 bottom: 80px;
+	} */
 
     footer .menu_footer {
         width: 90%;
@@ -464,31 +479,11 @@ footer .icons a:nth-child(2){
 	main .right {
 		display: none;
 	}
-
-	footer .menu_footer {
-		width: 100%;
-		display: flex;
-		margin-left: auto;
-		margin-right: auto;
-		position: relative;
-		right: 150px;
-	}
-
-	footer .menu_footer a {
-		flex-direction: row;
-		margin-left: 30px;
-	}
 }
 
 @media (max-width: 600px){
 	.wrapper {
 		width: 100%;
-	}
-
-	footer .menu_footer {
-		width: 40%;
-		margin-left: auto;
-		margin-right: auto;
 	}
 }
 
@@ -502,10 +497,6 @@ footer .icons a:nth-child(2){
 	.wrapper {
 		width: 100%;
 	}
-
-    footer .menu_footer a{
-        font-size: 15px;
-    }
 }
 
 @media (min-width: 280px) and (max-width: 653px){

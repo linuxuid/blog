@@ -29,7 +29,12 @@ header nav .subMenu .dropdown .dropdown-content form button {
     font-size: 16px;
     border: none;
     position: relative;
-    left: 15px;
+    right: 10px;
+}
+
+header nav .subMenu .dropdown .dropdown-content .log > button {
+    position: relative;
+    left: 5px;
 }
 
 header nav .subMenu .dropdown .dropdown-content form button:hover {
@@ -62,10 +67,60 @@ main .content .success_content p {
 
 
 	header nav .subMenu .dropdown .dropdown-content {
+		/* display: block;   */
+		position: absolute;
+		/* background-color: rgba(0,0,0,0.2) */
+        top: 420px;
+        left: 450px;
+	}
+}
+
+@media (max-width: 1024px) {
+    header nav .subMenu .dropdown .dropbtn {
+        position: absolute;
+        z-index: 1;
+        top: 350px;
+    }
+
+
+	header nav .subMenu .dropdown .dropdown-content {
 		/* display: block;  */
 		position: absolute;
 		/* background-color: rgba(0,0,0,0.2) */
         top: 420px;
-        left: 530px;
+        left: 300px;
 	}
+}
+
+@media (max-width: 768px){
+    header nav .subMenu .dropdown .dropbtn {
+        position: absolute;
+        z-index: 1;
+        top: 350px;
+    }
+
+
+	header nav .subMenu .dropdown .dropdown-content {
+		/* display: block;  */
+		position: absolute;
+		/* background-color: rgba(0,0,0,0.2) */
+        top: 420px;
+        left: 180px;
+	}
+}
+
+@media (max-width: 600px){
+
+}
+
+@media (max-width: 480px){
+
+}
+
+@media (min-width: 360px) and (max-width: 740px){
+
+}
+
+@media (min-width: 280px) and (max-width: 653px){
+
 }

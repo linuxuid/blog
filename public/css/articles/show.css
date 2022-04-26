@@ -37,3 +37,22 @@ main .content .content_description p {
     font-family: Comic Sans MS, Comic Sans, cursive;
     line-height: 28px;
 }
+
+main .content .read_next {
+    display: flex;
+}
+
+main .content .read_next .images {
+    margin-top: 30px;
+}
+
+main .content .read_next .images img {
+    margin: 10px;
+}
+
+/* adaptive */
+@media (max-width: 1024px) {
+    main .content .content_description img {
+        height: 60%;
+    }
+}

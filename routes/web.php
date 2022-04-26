@@ -6,8 +6,9 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\BooksCategoriesController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\HomePageController;
-use App\Http\Controllers\LoginAndLogOutController;
-use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\Auth\LoginAndLogOutController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\ChangePasswordController;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
 
@@ -64,11 +65,14 @@ Route::get('login', [LoginAndLogOutController::class, 'create'])->name('login.cr
 Route::post('login', [LoginAndLogOutController::class, 'store'])->name('login.post');
 
 // logout
-Route::post('/login-success', [LoginAndLogOutController::class, 'destroy'])->name('login.delete');
+Route::post('/login-success', [LoginAndLogOutController::class, 'destroy'])->name('login.delete')->middleware('auth');
 
 Route::get('/login-success', [LoginAndLogOutController::class, 'loginPage'])->name('login.success');
 
+// change password
+Route::get('change-password/{id}', [ChangePasswordController::class, 'create'])->name('password.change')->middleware('auth');
+Route::post('change-password/{id}', [ChangePasswordController::class, 'store'])->name('password.change.post')->middleware('auth');
 /**
  * Admin Controll panel
  */
-Route::get('/admin-control', [AdminController::class, 'index'])->name('admin.index');
+Route::get('/admin-control', [AdminController::class, 'index'])->name('admin.index')->middleware('admin');

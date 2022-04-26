@@ -27,23 +27,51 @@
             
             @if (auth()->user())
                 <a>Здравствуйте, <span> {{ auth()->user()->name  }}</span></a> 
-            @else
-                <a href="{{ route('register.create') }}">Регистрация</a>
-                <a href="{{ route('login.create') }}">Войти</a>
             @endif    
+
+                @if (auth()->user())
                     <div class="dropdown">
                         <button class="dropbtn">
                             Выйти
                             <i class="fa fa-chevron-down"></i>
                         </button>
-                    <div class="dropdown-content">
-                        <form method="POST" action="{{ route('login.delete') }}">
-                            @csrf
-                            <button>
-                                Выйти
-                            </button>
-                        </form>
-                    </div>    
+                    <div class="dropdown-content">                    
+                @else
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Войти
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                    <div class="dropdown-content">      
+                @endif
+
+
+                        <!-- if user auth he can change password  -->
+                        @if (auth()->user())
+                            <form method="GET" action="{{ route('password.change', ['id' => auth()->user()->id]) }}">
+                                <button>
+                                    Изменить пароль
+                                </button>
+                            </form>
+                            <form method="POST" action="{{ route('login.delete') }}" class="log">
+                                @csrf
+                                <button>
+                                    Выйти
+                                </button>
+                            </form>
+                        @else
+                            <form method="GET" action="{{ route('login.create') }}">
+                                 <button>
+                                     Войти
+                                 </button>
+                            </form>
+                            <form method="GET" action="{{ route('register.create') }}">
+                                <button>
+                                    Регистрация
+                                </button>
+                            </form>
+                        @endif
+                        </div>    
                     </div>
             </div>        
         </nav>          

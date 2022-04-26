@@ -34,6 +34,7 @@ main .content .content_description a img {
 main .content .content_description h2 {
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 main .content .content_description h2 > a {
@@ -150,6 +151,9 @@ main .right .right_description {
 }
 
 @media(max-width:1280px) {
+    main .content .content_description a > img {
+        height: 60%;
+    }
 
     main .content .content_description .btn button{
         position: relative;

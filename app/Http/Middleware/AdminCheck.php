@@ -20,7 +20,7 @@ class AdminCheck
             abort(403);
         }
 
-        if(auth()->user()->username != 'admin'){
+        if(auth()->user()->username != 'kinkeyd'){
             abort(403);
         }
         return $next($request);

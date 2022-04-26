@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="{{ asset('/app.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="{{ asset('/css/articles/index.css') }}"> 
+
 <link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

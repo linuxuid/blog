@@ -1,7 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
+use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class LoginAndLogOutController extends Controller
@@ -36,7 +38,9 @@ class LoginAndLogOutController extends Controller
 
     public function loginPage()
     {
-        return view('auth.success');
+        return view('auth.success', [
+            'users' => User::all()
+        ]);
     }
 
     public function destroy()

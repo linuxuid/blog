@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    @show 
 </head>
-<body>
+<body class="background">
     <div class="wrapper">
     @section('header') 
     <header>
@@ -24,7 +24,16 @@
                 <a href="/">Главная</a>
                 <a href="">Статьи</a>
                 <a href="{{ route('rules') }}">Правила</a>
+            @if (auth()->user())
+                <a href="{{ route('login.success') }}">личный кабинет</a>
+            @else
+                <a href="{{ route('register.create') }}">Регистрация</a>
+                <a href="{{ route('login.create') }}">Войти</a>
+            @endif
+
+            @if (auth()->user() && auth()->user()->name == 'admin')
                 <a href="{{ route('admin.index') }}">Панель администратора</a>
+            @endif
                     <div class="dropdown">
                         <button class="dropbtn">
                             Мануалы

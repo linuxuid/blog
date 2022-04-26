@@ -1,0 +1,18 @@
+.wrapper {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+
+main .content .container .change {
+    text-align: center;
+    position: relative;
+    left: 70px;
+}
+
+main .content .container .change_password {
+    color: forestgreen;
+    text-align: center;
+    font-size: 18px;
+}

@@ -39,20 +39,37 @@ main .content .content_description p {
 }
 
 main .content .read_next {
-    display: flex;
+    /* display: flex; */
+}
+
+main .content .read_next .read_text_header h2{
+    margin-left: 65px;
 }
 
 main .content .read_next .images {
-    margin-top: 30px;
+    margin-top: 10px;
+    position: relative;
+    left: 50px;
 }
 
 main .content .read_next .images img {
-    margin: 10px;
+    margin: 25px;
 }
 
 /* adaptive */
 @media (max-width: 1024px) {
+    main .content .read_next .images {
+        display: flex;
+        flex-direction: column;
+    }
+    main .content .read_next .images img {
+        width: 100%;
+        position: relative;
+        right: 60px;
+    }
+
     main .content .content_description img {
         height: 60%;
+        
     }
 }

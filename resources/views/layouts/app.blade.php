@@ -21,14 +21,11 @@
             <label for="menu" class="toogleMenu"><i class="fa fa-bars"></i>Menu</label>
 
             <div class="subMenu">
-                <a href="/">Главная</a>
-                <a href="">Статьи</a>
-                <a href="{{ route('rules') }}">Правила</a>
-            @if (auth()->user())
-                <a href="{{ route('login.success') }}">личный кабинет</a>
-            @else
-                <a href="{{ route('register.create') }}">Регистрация</a>
-                <a href="{{ route('login.create') }}">Войти</a>
+                <a href="/" target="_blank">Главная</a>
+                <a href="" target="_blank">Статьи</a>
+                <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
+            @if (auth()->user() && auth()->user()->name == 'admin')
+                <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
             @endif
 
             @if (auth()->user() && auth()->user()->name == 'admin')
@@ -78,8 +75,8 @@
     @section('footer')
     <footer>
         <nav class="menu_footer">
-            <a href="#">Ссылки</a>
-            <a href="#">Контакты</a>
+            <a href="{{ route('links.links') }}">Ссылки</a>
+            <a href="{{ route('home.contact') }}">Контакты</a>
                 <div class="icons">
                     <a href="/" class="fa fa-twitter"></a>
                     <a href="/" class="fa fa-telegram"></a>

@@ -24,7 +24,10 @@
                             </p>
             </div>
             <div class="read_next">
-                <h2>Читайте дальше:</h2>
+                <div class="read_text_header">
+                    <h2>Читайте дальше:</h2>
+                </div>
+                
                 <div class="images">
                     <img src="https://via.placeholder.com/200x120" alt="" class="img-fluid">
                     <img src="https://via.placeholder.com/200x120" alt="" class="img-fluid">

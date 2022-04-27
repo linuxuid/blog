@@ -21,17 +21,17 @@
                 <label for="menu" class="toogleMenu"><i class="fa fa-bars"></i>Menu</label>
                         <div class="subMenu">
                             <a href="/">Главная</a>
-                            <a href="{{ route('rules') }}">Правила</a>
+                            <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
                         @if (auth()->user() && auth()->user()->name == 'admin')
-                            <a href="{{ route('admin.index') }}">Панель администратора</a>
+                            <a href="{{ route('admin.index') }}" target="_blank">Панель администратора</a>
                         @endif
                         
                         @if (auth()->user())
                             <a>Здравствуйте, <span> {{ auth()->user()->name  }}</span></a> 
-                            <a href="{{ route('login.success') }}">личный кабинет</a>
+                            <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
                         @else
-                            <a href="{{ route('register.create') }}">Регистрация</a>
-                            <a href="{{ route('login.create') }}">Войти</a>
+                            <a href="{{ route('register.create') }}" target="_blank">Регистрация</a>
+                            <a href="{{ route('login.create') }}" target="_blank">Войти</a>
                         @endif    
                                 <div class="dropdown">
                                     <button class="dropbtn">

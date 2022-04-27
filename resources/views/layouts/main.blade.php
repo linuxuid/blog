@@ -25,9 +25,9 @@
                     <input type="checkbox" name="toogle" id="menu" class="toogleMenu">
                     <label for="menu" class="toogleMenu"><i class="fa fa-bars"></i>Menu</label>
                     <div class="subMenu">
-                            <a href="/">Главная</a>
-                            <a href="{{ route('categories.index') }}">Категории</a>
-                            <a href="{{ route('rules') }}">Правила</a>
+                            <a href="/" target="_blank">Главная</a>
+                            <a href="{{ route('categories.index') }}" target="_blank">Категории</a>
+                            <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
                     </div>
                     <input type="checkbox" name="toogle_search" id="search" class="toogleSearch">
                     <label for="search" class="toogleSearch"><i class="fa fa-search"></i></label>
@@ -53,9 +53,8 @@
         @section('footer')
             <footer>
                 <nav class="menu_footer">
-                    <a href="#">Ссылки</a>
-                    <a href="#">Опубликовать свою статью</a>
-                    <a href="#">Контакты</a>
+                    <a href="{{ route('links.links') }}" target="_blank">Ссылки</a>
+                    <a href="{{ route('home.contact') }}" target="_blank">Контакты</a>
                         <div class="icons">
                             <a href="/" class="fa fa-twitter"></a>
                             <a href="/" class="fa fa-telegram"></a>

@@ -9,6 +9,7 @@ use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\Auth\LoginAndLogOutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ChangePasswordController;
+use App\Http\Controllers\LinksPageController;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
 
@@ -27,7 +28,21 @@ use Illuminate\Support\Facades\Route;
  * HomePageController , main page , rules and etc.. 
  */
 Route::get('/', [HomePageController::class, 'index'])->name('home.index');
-Route::get('/rules', [HomePageController::class, 'rulesPage'])->name('rules');
+Route::get('/rules', [HomePageController::class, 'rulesPage'])->name('home.rules');
+
+/**
+ * contacts
+ */
+Route::get('contacts', [HomePageController::class, 'contactMePage'])->name('home.contact');
+
+/**
+ * links
+ */
+Route::get('links', [LinksPageController::class, 'index'])->name('links.links');
+
+Route::get('/links-create', [LinksPageController::class, 'create'])->name('links.create');
+Route::post('/links-upload', [LinksPageController::class, 'store'])->name('links.store');
+
 
 /**
  * CategoriesController show index
@@ -51,6 +66,7 @@ Route::get('/articles/{id}/{subArticle_id}', [ArticlesController::class, 'show']
  */
 Route::get('/create-article', [ArticlesController::class, 'create'])->name('articles.create');
 Route::post('/upload-article', [ArticlesController::class,'store'])->name('articles.store');
+
 
 /**
  * Auth form

@@ -19,9 +19,9 @@
         <label for="menu" class="toogleMenu"><i class="fa fa-bars"></i>Menu</label>
 
         <div class="subMenu">
-            <a href="/">Главная</a>
-            <a href="">Статьи</a>
-            <a href="{{ route('rules') }}">Правила</a>
+            <a href="/" target="_blank">Главная</a>
+            <a href="" target="_blank">Статьи</a>
+            <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
         @if (auth()->user())
             <a>Здравствуйте, <span>{{ auth()->user()->name }}</span></a>            
         @endif    
@@ -63,9 +63,9 @@
                 </button>
              </form>
 
-             <form>
+             <form action="{{ route('links.create') }}">
                 <button>
-                    Администрирование пользователей
+                    Опубликовать ссылку
                 </button>
             </form>
         </div>

@@ -19,10 +19,10 @@
             <label for="menu" class="toogleMenu"><i class="fa fa-bars"></i>Menu</label>
 
             <div class="subMenu">
-                <a href="/">Главная</a>
-                <a href="{{ route('categories.index') }}">Категории</a>
-                <a href="#">Статьи</a>
-                <a href="{{ route('rules') }}">Правила</a>
+                <a href="/" target="_blank">Главная</a>
+                <a href="{{ route('categories.index') }}" target="_blank">Категории</a>
+                <a href="#" target="_blank">Статьи</a>
+                <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
                     <div class="dropdown">
                         <button class="dropbtn">
                             Мануалы

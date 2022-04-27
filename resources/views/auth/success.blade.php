@@ -20,7 +20,9 @@
 
             <div class="subMenu">
                 <a href="/">Главная</a>
-                <a href="{{ route('rules') }}">Правила</a>
+                <a href="{{ route('home.rules') }}">Правила</a>
+                <a href="#">Статьи</a>
+                <a href="{{ route('categories.index') }}">Категории</a>
             @if (auth()->user() && auth()->user()->name == 'admin')
                 <a href="{{ route('admin.index') }}">Панель администратора</a>
             @endif

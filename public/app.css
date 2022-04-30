@@ -326,15 +326,15 @@ footer .icons a:nth-child(2){
 		padding: 10px;
 		position: absolute;
 		left: 15px;
-		top: 420px;
+		top: 240px;
 	}
 
 	header nav .dropdown .dropdown-content {
 		/* display: block;  */
 		position: absolute;
 		background-color: rgba(0,0,0,0.2);
-		left: 640px;
-		top: 490px;
+		left: 550px;
+		top: 290px;
 	}
 
 	header nav label.toogleMenu{

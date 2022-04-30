@@ -7,9 +7,55 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
+<link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
 @endsection
 
+@section('header') 
+<header>
+    <nav>
+        <input type="checkbox" name="toogle" id="menu" class="toogleMenu">
+        
+        <label for="menu" class="toogleMenu"><i class="fa fa-bars"></i>Menu</label>
+
+        <div class="subMenu">
+            <a href="/" target="_blank">Главная</a>
+            <a href="{{ route('articles.all') }}" target="_blank">Статьи</a>
+        @if (auth()->user() && auth()->user()->name == 'admin')
+            <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
+        @endif
+
+        @if (auth()->user() && auth()->user()->name == 'admin')
+            <a href="{{ route('admin.index') }}">Панель администратора</a>
+        @endif
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Мануалы
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="{{ route('howtostuff.anonymity') }}">Безопасность в сети</a>
+                    <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
+                    <a href="#">Ссылка 3</a>
+                </div>    
+                </div>
+                   
+        </div>        
+    </nav>  
+    <div class="search">     
+        <input type="checkbox" name="toogle_search" id="search" class="toogleSearch">
+        
+        <label for="search" class="toogleSearch"><i class="fa fa-search"></i></label>
+        
+        <form class="search" action="/" method="GET">
+            <input type="text" placeholder="искать">
+        
+            <button>
+                найти
+            </button>
+        </form>
+    </div>       
+</header>
+@endsection
 
 @section('content')
     <main>

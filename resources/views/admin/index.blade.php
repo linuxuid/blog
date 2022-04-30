@@ -21,7 +21,17 @@
         <div class="subMenu">
             <a href="/" target="_blank">Главная</a>
             <a href="" target="_blank">Статьи</a>
-            <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Мануалы
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+            <div class="dropdown-content">
+                <a href="{{ route('howtostuff.anonymity') }}">Безопасность в сети</a>
+                <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
+                <a href="#">Ссылка 3</a>
+            </div>    
+            </div>
         @if (auth()->user())
             <a>Здравствуйте, <span>{{ auth()->user()->name }}</span></a>            
         @endif    

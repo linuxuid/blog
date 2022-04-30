@@ -3,11 +3,10 @@
 @section('links')
     <link rel="stylesheet" href="{{ asset('/app.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/homepage/contacts.css') }}">
-    <link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 @endsection
 
@@ -21,7 +20,7 @@
                             Здравствуйте, я хочу поблагодарить вас за то что вы сможете предложить какую-то свою идею или статью, разумеется я опубликую в случае если она будет соответсвовать тематике этого сайта.
                         </p>
                         <p>
-                            вы можете написать мне на <a href="mailto:freehaven440@outlook.com">почту</a> или же написать в <a href="#">telegram</a>.
+                            вы можете написать мне на <a href="mailto:freehaven440@outlook.com">почту</a> или же написать в <a href="https://tlgg.ru/maharadjas" target="_blank">telegram</a>.
                         </p>
                 </div>
                 

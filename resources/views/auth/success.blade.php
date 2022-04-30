@@ -3,12 +3,11 @@
 @section('links')
 <link rel="stylesheet" href="{{ asset('css/auth/success.css') }}">
 <link rel="stylesheet" href="{{ asset('/app.css') }}">
-<link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
+<link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
 @show 
 
 @section('header')
@@ -20,8 +19,7 @@
 
             <div class="subMenu">
                 <a href="/">Главная</a>
-                <a href="{{ route('home.rules') }}">Правила</a>
-                <a href="#">Статьи</a>
+                <a href="{{ route('articles.all') }}">Статьи</a>
                 <a href="{{ route('categories.index') }}">Категории</a>
             @if (auth()->user() && auth()->user()->name == 'admin')
                 <a href="{{ route('admin.index') }}">Панель администратора</a>
@@ -66,11 +64,6 @@
                                  <button>
                                      Войти
                                  </button>
-                            </form>
-                            <form method="GET" action="{{ route('register.create') }}">
-                                <button>
-                                    Регистрация
-                                </button>
                             </form>
                         @endif
                         </div>    

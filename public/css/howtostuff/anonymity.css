@@ -1,0 +1,74 @@
+.wrapper {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+
+main .content {
+    width: 100%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+main .content .anonymity_header h2 {
+    text-align: center;
+}
+
+main .content .anonymity_header p {
+    margin-left: 53px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+main .content .anonymity_content {
+    width: 90%;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+main .content .anonymity_content h3 {
+    text-align: center;
+    margin-top: 35px;
+}
+
+main .content .anonymity_content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main .content .anonymity_content a {
+    color: blue;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+main .content .anonymity_content a:hover {
+    color: red;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+main .content .anonymity_content .note {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background: wheat;
+    padding: 10px;
+}
+
+main .content .anonymity_content .note span {
+    color: red;
+    text-decoration: underline;
+}
+
+main .content .anonymity_content ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+main .content .anonymity_content ul .first_letter {
+    color: red;
+}
+
+main .content .anonymity_content ul li {
+    margin-bottom: 10px;
+}

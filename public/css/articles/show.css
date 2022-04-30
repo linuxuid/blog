@@ -42,18 +42,16 @@ main .content .read_next {
     /* display: flex; */
 }
 
-main .content .read_next .read_text_header h2{
-    margin-left: 65px;
+main .content .read_next .read_text_header h2 > a {
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-main .content .read_next .images {
-    margin-top: 10px;
-    position: relative;
-    left: 50px;
-}
-
-main .content .read_next .images img {
-    margin: 25px;
+main .content .read_next .read_text_header h2 > a:hover {
+    color: red;
+    text-decoration: underline;
+    transition: 0.5s;
 }
 
 /* adaptive */

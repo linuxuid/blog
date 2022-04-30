@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
 @endsection
 
 @section('header')
@@ -21,7 +21,7 @@
             <div class="subMenu">
                 <a href="/" target="_blank">Главная</a>
                 <a href="{{ route('categories.index') }}" target="_blank">Категории</a>
-                <a href="#" target="_blank">Статьи</a>
+                <a href="{{ route('articles.all') }}" target="_blank">Статьи</a>
                 <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
                     <div class="dropdown">
                         <button class="dropbtn">
@@ -29,7 +29,7 @@
                             <i class="fa fa-chevron-down"></i>
                         </button>
                     <div class="dropdown-content">
-                        <a href="#">Ссылка 1</a>
+                        <a href="{{ route('howtostuff.anonymity') }}">Безопасность в сети</a>
                         <a href="#">Ссылка 2</a>
                         <a href="#">Ссылка 3</a>
                     </div>    

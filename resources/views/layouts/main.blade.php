@@ -10,12 +10,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-        <link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
+        <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     @show
-    <title>App name - @yield('name', 'Personal blog')</title>
+    <title>@yield('name', 'The FreeBee')</title>
 </head>
 <body>
     <div class="wrapper">
@@ -26,8 +26,8 @@
                     <label for="menu" class="toogleMenu"><i class="fa fa-bars"></i>Menu</label>
                     <div class="subMenu">
                             <a href="/" target="_blank">Главная</a>
+                            <a href="{{ route('articles.all') }}">Статьи</a>
                             <a href="{{ route('categories.index') }}" target="_blank">Категории</a>
-                            <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
                     </div>
                     <input type="checkbox" name="toogle_search" id="search" class="toogleSearch">
                     <label for="search" class="toogleSearch"><i class="fa fa-search"></i></label>

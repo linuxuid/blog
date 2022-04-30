@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ asset('css/auth/success.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/form/form.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/error/error.css') }}">
-    <link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,6 @@
                 <label for="menu" class="toogleMenu"><i class="fa fa-bars"></i>Menu</label>
                         <div class="subMenu">
                             <a href="/">Главная</a>
-                            <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
                         @if (auth()->user() && auth()->user()->name == 'admin')
                             <a href="{{ route('admin.index') }}" target="_blank">Панель администратора</a>
                         @endif
@@ -30,7 +29,6 @@
                             <a>Здравствуйте, <span> {{ auth()->user()->name  }}</span></a> 
                             <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
                         @else
-                            <a href="{{ route('register.create') }}" target="_blank">Регистрация</a>
                             <a href="{{ route('login.create') }}" target="_blank">Войти</a>
                         @endif    
                                 <div class="dropdown">

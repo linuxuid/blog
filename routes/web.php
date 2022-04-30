@@ -9,6 +9,7 @@ use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\Auth\LoginAndLogOutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ChangePasswordController;
+use App\Http\Controllers\HowToStuffController;
 use App\Http\Controllers\LinksPageController;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
@@ -28,12 +29,17 @@ use Illuminate\Support\Facades\Route;
  * HomePageController , main page , rules and etc.. 
  */
 Route::get('/', [HomePageController::class, 'index'])->name('home.index');
-Route::get('/rules', [HomePageController::class, 'rulesPage'])->name('home.rules');
 
 /**
  * contacts
  */
 Route::get('contacts', [HomePageController::class, 'contactMePage'])->name('home.contact');
+
+/**
+ * how-to stuff
+ */
+Route::get('/protect-yourself', [HowToStuffController::class, 'networkSecurity'])->name('howtostuff.anonymity');
+Route::get('/about-hacking', [HowToStuffController::class, 'hackingPage'])->name('howtostuff.hacking');
 
 /**
  * links
@@ -61,6 +67,10 @@ Route::post('/upload-categories', [CategoriesController::class, 'store'])->name(
 Route::get('/articles/{id}', [ArticlesController::class, 'index'])->name('articles.index');
 
 Route::get('/articles/{id}/{subArticle_id}', [ArticlesController::class, 'show'])->name('articles.show');
+
+// all articles in order
+Route::get('/all-articles', [ArticlesController::class, 'allArticlesPage'])->name('articles.all');
+
 /**
  * create and upload articles
  */
@@ -73,8 +83,8 @@ Route::post('/upload-article', [ArticlesController::class,'store'])->name('artic
  */
 
  // register
-Route::get('/register', [RegisterController::class, 'create'])->name('register.create');
-Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+// Route::get('/register', [RegisterController::class, 'create'])->name('register.create');
+// Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
 
 // authorization
 Route::get('login', [LoginAndLogOutController::class, 'create'])->name('login.create');

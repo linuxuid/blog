@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>App name - @yield('title', 'Personal')</title>
+    <title>@yield('title', 'The FreeBee')</title>
    @section('links')
         <link rel="stylesheet" href="{{ asset('/app.css') }}">
-        <link rel="shortcut icon" type="image/png" href="{{ asset('/image/keys.png') }}"/>
+        <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    @show 
 </head>
@@ -22,8 +22,8 @@
 
             <div class="subMenu">
                 <a href="/" target="_blank">Главная</a>
-                <a href="" target="_blank">Статьи</a>
-                <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
+                <a href="{{ route('articles.all') }}" target="_blank">Статьи</a>
+                <a href="{{ route('categories.index') }}" target="_blank">Категории</a>
             @if (auth()->user() && auth()->user()->name == 'admin')
                 <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
             @endif
@@ -37,12 +37,11 @@
                             <i class="fa fa-chevron-down"></i>
                         </button>
                     <div class="dropdown-content">
-                        <a href="#">Ссылка 1</a>
-                        <a href="#">Ссылка 2</a>
+                        <a href="{{ route('howtostuff.anonymity') }}">Безопасность в сети</a>
+                        <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
                         <a href="#">Ссылка 3</a>
                     </div>    
                     </div>
-                       
             </div>        
         </nav>  
         <div class="search">     

@@ -37,6 +37,12 @@ main .content .content_description h2 {
     text-align: center;
 }
 
+main .content .content_description .date {
+    text-align:center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 main .content .content_description h2 > a {
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;

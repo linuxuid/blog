@@ -15,6 +15,13 @@ class ArticlesController extends Controller
         ]);
     }
 
+    public function allArticlesPage()
+    {
+        return view('articles.allarticles', [
+            'articles' => Article::all()
+        ]);
+    }
+
     public function create()
     {
         return view('articles.create');

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('main');
             $table->string('second');
             $table->string('three');
+            $table->string('four');
             $table->timestamps();
             
             $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');

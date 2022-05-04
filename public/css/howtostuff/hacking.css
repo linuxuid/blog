@@ -43,6 +43,12 @@ main .content .hacking_content .note {
     padding: 10px;
 }
 
+main .content .hacking_content img { 
+    width: 80%;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
 main .content .hacking_content ol {
     margin-top: 10px;
 }

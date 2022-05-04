@@ -31,8 +31,8 @@
                     </div>
                     <input type="checkbox" name="toogle_search" id="search" class="toogleSearch">
                     <label for="search" class="toogleSearch"><i class="fa fa-search"></i></label>
-                    <form class="search" action="/" method="GET">
-                        <input type="text" placeholder="искать">
+                    <form class="search" action="{{ url('/search') }}" method="GET">
+                        <input type="text" name="query" placeholder="искать">
                         <button>
                             <i class="fa fa-search"></i>
                         </button>

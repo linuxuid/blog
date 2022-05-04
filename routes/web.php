@@ -31,6 +31,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomePageController::class, 'index'])->name('home.index');
 
 /**
+ * search
+ */
+Route::get('/search', [HomePageController::class, 'search'])->name('search');
+
+/**
  * contacts
  */
 Route::get('contacts', [HomePageController::class, 'contactMePage'])->name('home.contact');

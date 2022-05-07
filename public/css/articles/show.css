@@ -28,11 +28,19 @@ main .content .content_description img {
     height: 700px;
 }
 
-main .content .content_description h2, .content .content_description p {
+main .content .content_description h1 {
     text-align: center;
 }
 
+main .content .content_description h2{
+    margin-top: 15px;
+    text-align: left;
+}
+
 main .content .content_description p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
     font-size: 18px;
     font-family: Comic Sans MS, Comic Sans, cursive;
     line-height: 28px;

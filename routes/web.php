@@ -67,6 +67,11 @@ Route::get('/create-categories', [CategoriesController::class, 'create'])->name(
 Route::post('/upload-categories', [CategoriesController::class, 'store'])->name('categories.store');
 
 /**
+ * categories common description
+ */
+Route::get('description/{id}', [CategoriesController::class, 'informationAbout'])->name('desc');
+
+/**
  * ArticlesController show index
  */
 Route::get('/articles/{id}', [ArticlesController::class, 'index'])->name('articles.index');
@@ -88,8 +93,8 @@ Route::post('/upload-article', [ArticlesController::class,'store'])->name('artic
  */
 
  // register
-// Route::get('/register', [RegisterController::class, 'create'])->name('register.create');
-// Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+Route::get('/register', [RegisterController::class, 'create'])->name('register.create');
+Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
 
 // authorization
 Route::get('login', [LoginAndLogOutController::class, 'create'])->name('login.create');

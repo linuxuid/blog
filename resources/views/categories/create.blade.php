@@ -22,7 +22,6 @@
                 <a href="/" target="_blank">Главная</a>
                 <a href="{{ route('categories.index') }}" target="_blank">Категории</a>
                 <a href="{{ route('articles.all') }}" target="_blank">Статьи</a>
-                <a href="{{ route('home.rules') }}" target="_blank">Правила</a>
                     <div class="dropdown">
                         <button class="dropbtn">
                             Мануалы

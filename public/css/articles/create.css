@@ -45,6 +45,10 @@ main .content {
     padding: 5px;
 }
 
+.content .container form > .content_form {
+    margin-top: 30px;
+}
+
 .content .container form button {
     display: block;
     margin-top: 20px;

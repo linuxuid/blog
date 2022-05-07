@@ -13,6 +13,5 @@ class Article extends Model
 
     protected $primaryKey = 'id';
 
-    protected $fillable = ['category_id', 'name', 'excerpt', 'slug', 'image'];
-
+    protected $guarded = [];
 }

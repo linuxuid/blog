@@ -45,7 +45,6 @@ class ArticlesController extends Controller
          */
         $filename = time() . '-' . $request->name . '.' . $request->image->extension();
 
-
         /**
          * directory
          */
@@ -56,6 +55,18 @@ class ArticlesController extends Controller
             'excerpt' => $request->input('excerpt'),
             'slug' => $request->input('slug'),
             'image' => $filename,
+            'header_1' => $request->input('header_1'),
+            'passage_1' => $request->input('passage_1'),
+            'header_2' => $request->input('header_2'),
+            'passage_2' => $request->input('passage_2'),
+            'header_3' => $request->input('header_3'),
+            'passage_3' => $request->input('passage_3'),
+            'header_4' => $request->input('header_4'),
+            'passage_4' => $request->input('passage_4'),
+            'header_5' => $request->input('header_5'),
+            'passage_5' => $request->input('passage_5'),
+            'header_6' => $request->input('header_6'),
+            'passage_6' => $request->input('passage_6'),
             'category_id' => $request->input('category_id')
         ]);
 

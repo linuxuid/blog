@@ -44,6 +44,21 @@ main .content .content_description h2 > a {
     text-decoration: none;
 }
 
+main .content .content_description .under_header {
+    text-align: center;
+    font-size: 14px;
+}
+
+main .content .content_description .under_header > a {
+    color: rgb(80, 80, 81);
+    text-decoration: none;
+}
+
+main .content .content_description .under_header > a:hover {
+    color: black;
+    transition: 0.4s;
+}
+
 main .content .content_description h2 > a:hover {
     color: black;
 }

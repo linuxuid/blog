@@ -61,4 +61,14 @@ class CategoriesController extends Controller
             return redirect()->route('categories.index');
         }
     }
+
+    /**
+     * description of categories
+     */
+    public function informationAbout($id)
+    {
+        return view('categories.description', [
+            'categories' => Category::find($id)
+        ]);
+    }
 }

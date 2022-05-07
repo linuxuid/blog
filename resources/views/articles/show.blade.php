@@ -15,12 +15,31 @@
     <main>
         <div class="content">
             <div class="content_description"> 
-                    <h2>{{ $articles->name }}</h2>
+                    <h1>{{ $articles->name }}</h1>
                 
                         <img src="/images/{{ $articles->image }}" alt="{{ $articles->image }}">  
                             <p>
                                 {{ $articles->slug }}
                             </p>
+                    
+                    <!-- BEGIN CONTENT -->
+                    <h2>{{ $articles->header_1 }}</h2>
+                    <p>{{ $articles->passage_1 }}</p>
+
+                    <h2>{{ $articles->header_2 }}</h2>
+                    <p>{{ $articles->passage_2 }}</p>
+
+                    <h2>{{ $articles->header_3 }}</h2>
+                    <p>{{ $articles->passage_3 }}</p>
+
+                    <h2>{{ $articles->header_4 }}</h2>
+                    <p>{{ $articles->passage_4 }}</p>
+
+                    <h2>{{ $articles->header_5 }}</h2>
+                    <p>{{ $articles->passage_5 }}</p>
+
+                    <h2>{{ $articles->header_6 }}</h2>
+                    <p>{{ $articles->passage_6 }}</p>
             </div>
             <div class="read_next">
                 <div class="read_text_header">

@@ -15,6 +15,17 @@ main .content .content_description h3 > a {
     text-decoration: none;
 }
 
+main .content .content_description a {
+    color: blue;
+    text-decoration: none;
+}
+
+main .content .content_description a:hover {
+    color: red;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
 main .content .content_description h3 > a:hover {
     color: black;
 }

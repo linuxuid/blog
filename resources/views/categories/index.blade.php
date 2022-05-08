@@ -20,6 +20,11 @@
         <div class="subMenu">
             <a href="/" target="_blank">Главная</a>
             <a href="{{ route('articles.all') }}" target="_blank">Статьи</a>
+            <div class="drop">
+                <a href="{{ route('howtostuff.anonymity') }}">Безопасность в сети</a>
+                <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
+                <a href="#">Ссылка 3</a>
+            </div>
         @if (auth()->user() && auth()->user()->name == 'admin')
             <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
         @endif

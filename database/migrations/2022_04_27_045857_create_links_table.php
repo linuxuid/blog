@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('links', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('image_path');
+            $table->string('link');
             $table->longText('body');
             $table->string('image');
             $table->timestamps();

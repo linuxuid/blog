@@ -61,9 +61,105 @@ main .content .read_next .read_text_header h2 > a:hover {
     text-decoration: underline;
     transition: 0.5s;
 }
+@media (max-width: 1280px)
+{
+
+	header nav .subMenu a, header nav .dropdown .dropbtn{
+        width: 100%;
+        justify-content: flex-start;
+        text-align: center;
+		margin-top: 20px;
+		height: 8%;
+        font-size: 20px;
+        color: white;
+	}
+
+	header nav .subMenu a:hover, header nav .dropdown .dropbtn:hover {
+		color: red;
+	}
+
+	header nav .dropdown .dropbtn{
+		color: white;
+		padding: 10px;
+		position: absolute;
+		left: 10px;
+		top: 210px;
+	}
+
+	header nav .dropdown .dropdown-content {
+		display: block; 
+		position: absolute;
+		background-color: rgba(0,0,0,0.2);
+		left: 450px;
+		top: 270px;
+	}
+
+	header nav label.toogleMenu{
+		display: block;
+		position: fixed;
+		z-index: 7;
+	}
+
+	header nav input.toogleMenu:checked ~ .subMenu {
+		display: block;
+	}
+}
 
 /* adaptive */
 @media (max-width: 1024px) {
+
+    header nav .subMenu {
+        height: 100vh;
+        width: 125vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #19a2ac;
+        z-index: 5;
+        display: none;
+        transition: 0.5s;
+	}
+
+    header nav .subMenu a, header nav .dropdown .dropbtn{
+        width: 100%;
+        justify-content: flex-start;
+        text-align: center;
+		margin-top: 20px;
+		height: 8%;
+        font-size: 20px;
+        color: white;
+	}
+
+	header nav .subMenu a:hover, header nav .dropdown .dropbtn:hover {
+		color: red;
+	}
+
+	header nav .dropdown .dropbtn{
+		color: white;
+		padding: 10px;
+		position: absolute;
+		left: 10px;
+		top: 210px;
+	}
+
+	header nav .dropdown .dropdown-content {
+		display: block; 
+		position: absolute;
+		background-color: rgba(0,0,0,0.2);
+		left: 290px;
+		top: 270px;
+	}
+
+	header nav label.toogleMenu{
+		display: block;
+		position: fixed;
+		z-index: 7;
+	}
+
+	header nav input.toogleMenu:checked ~ .subMenu {
+		display: block;
+	}
+
     main .content .read_next .images {
         display: flex;
         flex-direction: column;
@@ -78,4 +174,47 @@ main .content .read_next .read_text_header h2 > a:hover {
         height: 60%;
         
     }
+}
+
+@media (max-width: 768px){
+	.wrapper {
+		width: 100%;
+	}
+
+	header nav .subMenu {
+        height: 200vh;
+        width: 110vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #19a2ac;
+        z-index: 5;
+        display: none;
+        transition: 0.5s;
+	}
+
+
+	header nav .dropdown .dropbtn{
+		color: white;
+		padding: 10px;
+		position: absolute;
+		left: 4px;
+		top: 220px;
+	}
+
+	header nav .dropdown .dropdown-content {
+		position: absolute;
+		left: 230px;
+		top: 280px;
+	}
+
+	main .right {
+		display: none;
+	}
+}
+
+@media (max-width: 600px){
+	.wrapper {
+		width: 100%;
+	}
 }

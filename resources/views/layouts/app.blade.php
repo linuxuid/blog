@@ -24,6 +24,11 @@
                 <a href="/" target="_blank">Главная</a>
                 <a href="{{ route('articles.all') }}" target="_blank">Статьи</a>
                 <a href="{{ route('categories.index') }}" target="_blank">Категории</a>
+                <div class="drop">
+                    <a href="{{ route('howtostuff.anonymity') }}">Безопасность в жизни</a>
+                    <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
+                    <a href="#">BTC и телефоны</a>
+                </div>
             @if (auth()->user() && auth()->user()->name == 'admin')
                 <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
             @endif
@@ -37,9 +42,9 @@
                             <i class="fa fa-chevron-down"></i>
                         </button>
                     <div class="dropdown-content">
-                        <a href="{{ route('howtostuff.anonymity') }}">Безопасность в сети</a>
+                        <a href="{{ route('howtostuff.anonymity') }}">Безопасность в жизни</a>
                         <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
-                        <a href="#">Ссылка 3</a>
+                        <a href="#">BTC и телефоны</a>
                     </div>    
                     </div>
             </div>        

@@ -165,7 +165,7 @@ footer .icons a:nth-child(2){
 
     header .menu .subMenu {
         height: 100vh;
-        width: 150vh;
+        width: 140vh;
         position: fixed;
         left: 0;
         top: 0;
@@ -234,7 +234,7 @@ footer .icons a:nth-child(2){
 @media (max-width: 1024px){
     header .menu .subMenu {
         height: 100vh;
-        width: 110vh;
+        width: 120vh;
         position: fixed;
         left: 0;
         top: 0;
@@ -248,7 +248,7 @@ footer .icons a:nth-child(2){
 @media (max-width: 768px){
     header .menu .subMenu {
         height: 100vh;
-        width: 95vh;
+        width: 65vh;
         position: fixed;
         left: 0;
         top: 0;

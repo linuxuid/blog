@@ -51,13 +51,12 @@ main .content .anonymity_content a:hover {
 main .content .anonymity_content .note {
     border: 1px solid lightgray;
     border-radius: 10px;
-    background: wheat;
+    background: rgba(197, 197, 197, 0.759);
     padding: 10px;
 }
 
 main .content .anonymity_content .note span {
     color: red;
-    text-decoration: underline;
 }
 
 main .content .anonymity_content ul {
@@ -71,4 +70,22 @@ main .content .anonymity_content ul .first_letter {
 
 main .content .anonymity_content ul li {
     margin-bottom: 10px;
+}
+
+@media (min-width: 360px) and (max-width: 740px){
+    header .nav .subMenu {
+		height: 100vh;
+        width: 200px;
+        position: fixed;
+        left: 0;
+        top: 10;
+        background: #19a2ac;
+        z-index: 5;
+        display: none;
+        transition: 0.5s;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
 }

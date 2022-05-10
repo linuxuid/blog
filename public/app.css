@@ -262,6 +262,10 @@ footer .icons a:nth-child(2){
 		width: 100%;
 	}
 
+	.wrapper main .content {
+		width: 1000px;
+	}
+
 	header {
 	 width: 100%;
 	}
@@ -301,7 +305,7 @@ footer .icons a:nth-child(2){
 	
 	header nav .subMenu {
         height: 100vh;
-        width: 125vh;
+        width: 175vh;
         position: fixed;
         left: 0;
         top: 0;
@@ -396,9 +400,13 @@ footer .icons a:nth-child(2){
 		width: 100%;
 	}
 
+	.wrapper main .content {
+		width: 900px;
+	}
+
 	header nav .subMenu {
         height: 100vh;
-        width: 105vh;
+        width: 700px;
         position: fixed;
         left: 0;
         top: 0;
@@ -458,9 +466,14 @@ footer .icons a:nth-child(2){
 		width: 100%;
 	}
 
+	.wrapper main .content {
+		width: 600px;
+		margin-left: 20px;
+	}
+
 	header nav .subMenu {
         height: 100vh;
-        width: 80vh;
+        width: 400px;
         position: fixed;
         left: 0;
         top: 0;
@@ -494,15 +507,45 @@ footer .icons a:nth-child(2){
 	main .right {
 		display: none;
 	}
+
+
 }
 
 @media (max-width: 600px){
+	header .nav .subMenu {
+		height: 100vh;
+        width: 500px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #19a2ac;
+        z-index: 5;
+        display: none;
+        transition: 0.5s;
+	}
+
 	.wrapper {
 		width: 100%;
+	}
+
+	.wrapper main .content {
+		width: 450px;
 	}
 }
 
 @media (max-width: 480px){
+	header .nav .subMenu {
+		height: 100vh;
+        width: 350px;
+        position: fixed;
+        left: 0;
+        top: 10;
+        background: #19a2ac;
+        z-index: 5;
+        display: none;
+        transition: 0.5s;
+	}
+
     footer .menu_footer {
         font-size: 15px;
     }

@@ -27,7 +27,7 @@
                 <div class="drop">
                     <a href="{{ route('howtostuff.anonymity') }}">Безопасность в жизни</a>
                     <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
-                    <a href="#">BTC и телефоны</a>
+                    <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
                 </div>
             @if (auth()->user() && auth()->user()->name == 'admin')
                 <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
@@ -44,7 +44,7 @@
                     <div class="dropdown-content">
                         <a href="{{ route('howtostuff.anonymity') }}">Безопасность в жизни</a>
                         <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
-                        <a href="#">BTC и телефоны</a>
+                        <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
                     </div>    
                     </div>
             </div>        

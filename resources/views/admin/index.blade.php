@@ -27,7 +27,7 @@
                     <i class="fa fa-chevron-down"></i>
                 </button>
             <div class="dropdown-content">
-                <a href="{{ route('howtostuff.anonymity') }}">Безопасность в сети</a>
+                <a href="{{ route('howtostuff.anonymity') }}">Безопасность в жизни</a>
                 <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
                 <a href="#">Ссылка 3</a>
             </div>    
@@ -78,6 +78,83 @@
                     Опубликовать ссылку
                 </button>
             </form>
+            <br><br><br><br>
+            @if(session('deleteCat'))
+                <p>Категория была удалена</p>
+            @endif
+            <table>
+                    <tr>
+                    <th colspan="1">Категории</th>
+                    <th>Айди</th>
+                    <th>Удалить</th>
+                    </tr>
+                    @foreach ($categories as $category)
+                    <tr>
+                    <td>{{ $category->name }}</td>
+                    <td>{{ $category->id }}</td>
+                    <td>
+                        <form action="/delete-category/{{ $category->id }}" method="POST">
+                            @csrf
+                        <button>
+                            Удалить
+                        </button>
+                        </form>
+                    </td>
+                    </tr>
+                @endforeach
+            </table>
+            
+            <br><br><br>
+            @if(session('deleteArt'))
+                <p>Статья была удалена</p>
+            @endif
+            <table>
+                <tr>
+                <th colspan="1">Статьи</th>
+                <th>Айди</th>
+                <th>Удалить</th>
+                </tr>
+                @foreach ($articles as $article)
+                <tr>
+                <td>{{ $article->name }}</td>
+                <td>{{ $article->category_id }}</td>
+                <td>
+                    <form action="/delete-article/{{ $article->id }}" method="POST">
+                        @csrf
+                    <button>
+                        Удалить
+                    </button>
+                    </form>
+                </td>
+                </tr>
+            @endforeach
+        </table>
+
+        <br><br><br>
+        @if(session('deleteLinks'))
+            <p>Ссылка была удалена</p>
+        @endif
+        <table>
+            <tr>
+            <th colspan="1">Ссылки</th>
+            <th>Айди</th>
+            <th>Удалить</th>
+            </tr>
+            @foreach ($links as $link)
+            <tr>
+            <td>{{ $link->name }}</td>
+            <td>{{ $link->id }}</td>
+            <td>
+                <form action="/delete-links/{{ $link->id }}" method="POST">
+                    @csrf
+                <button>
+                    Удалить
+                </button>
+                </form>
+            </td>
+            </tr>
+        @endforeach
+    </table>
         </div>
     </div>
 </main>

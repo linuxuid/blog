@@ -43,8 +43,9 @@ Route::get('contacts', [HomePageController::class, 'contactMePage'])->name('home
 /**
  * how-to stuff
  */
-Route::get('/protect-yourself', [HowToStuffController::class, 'networkSecurity'])->name('howtostuff.anonymity');
+Route::get('/protect-yourself', [HowToStuffController::class, 'socialSecurity'])->name('howtostuff.anonymity');
 Route::get('/about-hacking', [HowToStuffController::class, 'hackingPage'])->name('howtostuff.hacking');
+Route::get('/about-physical', [HowToStuffController::class, 'physical'])->name('howtostuff.physic');
 
 /**
  * links
@@ -112,3 +113,13 @@ Route::post('change-password/{id}', [ChangePasswordController::class, 'store'])-
  * Admin Controll panel
  */
 Route::get('/admin-control', [AdminController::class, 'index'])->name('admin.index')->middleware('admin');
+
+/**
+ * delete data
+ */
+Route::post('/delete-category/{id}' , [AdminController::class, 'deleteCategories'])->name('del.categ');
+
+Route::post('/delete-article/{id}', [AdminController::class, 'deleteArticles'])->name('del.art');
+
+Route::post('/delete-links/{id}', [AdminController::class, 'deleteLinks'])->name('del.links');
+

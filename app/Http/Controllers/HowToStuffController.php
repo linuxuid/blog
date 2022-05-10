@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HowToStuffController extends Controller
 {
-    public function networkSecurity()
+    public function socialSecurity()
     {
         return view('howtostuff.anonymity');
     }
@@ -14,5 +14,10 @@ class HowToStuffController extends Controller
     public function hackingPage()
     {
         return view('howtostuff.hacking');
+    }
+
+    public function physical()
+    {
+        return view('howtostuff.physic');
     }
 }

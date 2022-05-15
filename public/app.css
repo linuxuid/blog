@@ -262,9 +262,9 @@ footer .icons a:nth-child(2){
 		width: 100%;
 	}
 
-	.wrapper main .content {
+	/* .wrapper main .content {
 		width: 1000px;
-	}
+	} */
 
 	header {
 	 width: 100%;
@@ -302,10 +302,14 @@ footer .icons a:nth-child(2){
 		bottom: 50px;
 		left: 200px;
 	}
+
+	main .content .content_description .btn  hr {
+		display: none;
+	}
 	
 	header nav .subMenu {
         height: 100vh;
-        width: 175vh;
+        width: 135vh;
         position: fixed;
         left: 0;
         top: 0;
@@ -400,13 +404,13 @@ footer .icons a:nth-child(2){
 		width: 100%;
 	}
 
-	.wrapper main .content {
+	/* .wrapper main .content {
 		width: 900px;
-	}
+	} */
 
 	header nav .subMenu {
         height: 100vh;
-        width: 700px;
+        width: 1000px;
         position: fixed;
         left: 0;
         top: 0;
@@ -467,13 +471,14 @@ footer .icons a:nth-child(2){
 	}
 
 	.wrapper main .content {
-		width: 600px;
-		margin-left: 20px;
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	header nav .subMenu {
         height: 100vh;
-        width: 400px;
+        width: 450px;
         position: fixed;
         left: 0;
         top: 0;

@@ -20,4 +20,14 @@ class HowToStuffController extends Controller
     {
         return view('howtostuff.physic');
     }
+
+    public function drugs()
+    {
+        return view('howtostuff.drugs');
+    }
+
+    public function onion()
+    {
+        return view('howtostuff.onion');
+    }
 }

@@ -28,6 +28,8 @@
                     <a href="{{ route('howtostuff.anonymity') }}">Безопасность в жизни</a>
                     <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
                     <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
+                    <a href="{{ route('howtostuff.drugs') }}">Психоактивные вещества</a>
+                    <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
                 </div>
             @if (auth()->user() && auth()->user()->name == 'admin')
                 <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
@@ -45,6 +47,8 @@
                         <a href="{{ route('howtostuff.anonymity') }}">Безопасность в жизни</a>
                         <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
                         <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
+                        <a href="{{ route('howtostuff.drugs') }}">Психоактивные вещества</a>
+                        <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
                     </div>    
                     </div>
             </div>        

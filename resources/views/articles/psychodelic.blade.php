@@ -24,17 +24,25 @@
             background: rgba(245, 239, 239, 0.759);
             padding: 10px;
         }
+
+        main .content .content_description a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        main .content .content_description a:hover {
+            color: red;
+            transition: 0.5s;
+        }
         
     </style>
-
     <main>
         <div class="content">
             <div class="content_description"> 
-                @if ($articles->category_id == 1)
+
                     <p class="note">
                         Я бы хотел сказать что пожалуйста не употребляйте вещества, это губительно для вашего здоровья! Включительно вашей личности!
                     </p>
-                @endif
 
                     <h1>{{ $articles->name }}</h1>
                 
@@ -214,6 +222,12 @@
                         <br>
                         Будьте в хорошем настроении и не нужно в "депресованном состоянии" принимать такие вещества - это опасно.
                     </p>
+                @endif
+
+                @if ($articles->id == 2)
+                    <h2>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BC%D1%84%D0%B5%D1%82%D0%B0%D0%BC%D0%B8%D0%BD%D1%8B" target="_blank">Стимуляторы амфетаминового ряда</a>
+                    </h2>
                 @endif
             </div>
             <div class="read_next">

@@ -61,50 +61,6 @@
                         @endforeach
                     </select>
                 
-                    <h2 class="content_form">Содержание статьи:</h2>
-                    
-                    <label for="first">
-                        Первый блок:
-                    </label>
-                    <input type="text" name="header_1">
-                    <br><br>
-                    <textarea name="passage_1" id="first"></textarea>
-
-                    <label for="second">
-                        Первый блок:
-                    </label>
-                    <input type="text" name="header_2">
-                    <br><br>
-                    <textarea name="passage_2" id="second"></textarea>
-
-                    <label for="third">
-                        Первый блок:
-                    </label>
-                    <input type="text" name="header_3">
-                    <br><br>
-                    <textarea name="passage_3" id="third"></textarea>
-
-                    <label for="four">
-                        Первый блок:
-                    </label>
-                    <input type="text" name="header_4">
-                    <br><br>
-                    <textarea name="passage_4" id="four"></textarea>
-
-                    <label for="five">
-                        Первый блок:
-                    </label>
-                    <input type="text" name="header_5">
-                    <br><br>
-                    <textarea name="passage_5" id="five"></textarea>
-
-                    <label for="six">
-                        Первый блок:
-                    </label>
-                    <input type="text" name="header_6">
-                    <br><br>
-                    <textarea name="passage_6" id="six"></textarea>
-                
                 <button>
                     Опубликовать
                 </button>

@@ -156,6 +156,18 @@ main .right .right_description {
     padding-top: 10px;
 }
 
+@media (max-width: 1280px){ 
+    main .content .content_description hr {
+        display: none;
+    }
+
+    main .content .content_description .btn button {
+        position: relative;
+        right: 550px;
+        /* background-color: yellow; */
+    }
+}
+
 @media (max-width: 600px){
 	.wrapper {
 		width: 100%;

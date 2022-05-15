@@ -11,6 +11,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ChangePasswordController;
 use App\Http\Controllers\HowToStuffController;
 use App\Http\Controllers\LinksPageController;
+use App\Http\Controllers\OutputTopicsController;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
 
@@ -46,6 +47,8 @@ Route::get('contacts', [HomePageController::class, 'contactMePage'])->name('home
 Route::get('/protect-yourself', [HowToStuffController::class, 'socialSecurity'])->name('howtostuff.anonymity');
 Route::get('/about-hacking', [HowToStuffController::class, 'hackingPage'])->name('howtostuff.hacking');
 Route::get('/about-physical', [HowToStuffController::class, 'physical'])->name('howtostuff.physic');
+Route::get('/about-drugs', [HowToStuffController::class, 'drugs'])->name('howtostuff.drugs');
+Route::get('/about-onion', [HowToStuffController::class, 'onion'])->name('howtostuff.onion');
 
 /**
  * links
@@ -75,9 +78,11 @@ Route::get('description/{id}', [CategoriesController::class, 'informationAbout']
 /**
  * ArticlesController show index
  */
-Route::get('/articles/{id}', [ArticlesController::class, 'index'])->name('articles.index');
+Route::get('categories/articles/{id}', [ArticlesController::class, 'index'])->name('articles.index');
 
-Route::get('/articles/{id}/{subArticle_id}', [ArticlesController::class, 'show'])->name('articles.show');
+Route::get('/articles/{id}/{subArticle_id}', [OutputTopicsController::class, 'psychodelics'])->name('articles.show');
+
+Route::get('/about-stimulators/{name}', [OutputTopicsController::class, 'stimulators'])->name('articles.stimulators');
 
 // all articles in order
 Route::get('/all-articles', [ArticlesController::class, 'allArticlesPage'])->name('articles.all');

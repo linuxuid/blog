@@ -35,7 +35,7 @@ class ArticlesController extends Controller
         $request->validate([
             'name' => 'required',
             'excerpt' => 'required',
-            'slug' => 'required',
+            'more' => 'required',
             'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:5048',
             'category_id' => 'required'
         ]);
@@ -53,7 +53,7 @@ class ArticlesController extends Controller
         $article = Article::create([
             'name' => $request->input('name'),
             'excerpt' => $request->input('excerpt'),
-            'slug' => $request->input('slug'),
+            'more' => $request->input('more'),
             'image' => $filename,
             'category_id' => $request->input('category_id')
         ]);

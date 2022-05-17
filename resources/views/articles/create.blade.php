@@ -40,7 +40,7 @@
                 <label id="slug">
                     Подробно:
                 </label>
-                    <textarea id="slug" name="slug"></textarea>
+                    <textarea id="slug" name="more"></textarea>
             @error('slug')
                 <span class="errorMessage">{{ $message }}</span>
             @enderror

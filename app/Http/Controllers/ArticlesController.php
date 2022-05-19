@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ArticlesController extends Controller
 {
-    public function index($id)
+    public function index($id, $slug)
     {
         return view('articles.index', [
             'categories' => Category::find($id), // open article according to his `id` 
@@ -33,6 +33,7 @@ class ArticlesController extends Controller
          * validate
          */
         $request->validate([
+            'slug' => 'required',
             'name' => 'required',
             'excerpt' => 'required',
             'more' => 'required',
@@ -51,6 +52,7 @@ class ArticlesController extends Controller
         $request->image->move(public_path('images'), $filename);
 
         $article = Article::create([
+            'slug' => $request->input('slug'),
             'name' => $request->input('name'),
             'excerpt' => $request->input('excerpt'),
             'more' => $request->input('more'),
@@ -59,7 +61,7 @@ class ArticlesController extends Controller
         ]);
 
         if($article){
-            return redirect()->route('articles.index', ['id' => $article->id]);
+            return redirect()->route('categories.index');
         }
     }
 

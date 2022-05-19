@@ -20,6 +20,11 @@
                   enctype="multipart/form-data">
                 @csrf
                 <h2>Создать новую статью</h2>
+
+                <label>
+                    Slug:
+                </label>
+                <input type="text" name="slug" placeholder="slug">
                 
                 <label for="name">
                     Имя:

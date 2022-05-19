@@ -23,7 +23,7 @@
                  <!-- categories search -->
                 @forelse ($categories as $category)
                     <h2>
-                        <a href="{{ route('articles.index', ['id' => $category->id]) }}">
+                        <a href="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}">
                             {{ $category->name }}
                         </a>
                     </h2>
@@ -33,7 +33,7 @@
                     </p>
 
                     <div class="btn">
-                        <form method="GET" action="{{ route('articles.index', ['id' => $category->id]) }}">    
+                        <form method="GET" action="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}">    
                             <button>
                                 Открыть категорию
                             </button>
@@ -49,7 +49,7 @@
                 <!-- articles search -->
                 @forelse ($articles as $article)
                     <h2>
-                        <a href="{{ route('articles.show', ['id' => $article->id, 'subArticle_id' => $article->category_id]) }}">
+                        <a href="{{ route('articles.show', ['id' => $article->id, 'slug' => $article->slug ,'subArticle_id' => $article->category_id, 'slug_2' => $article->slug]) }}">
                             {{ $article->name }}
                         </a>
                     </h2>
@@ -58,7 +58,7 @@
                         {{ $article->excerpt }}
                     </p>
                     <div class="btn">
-                        <form method="GET" action="{{ route('articles.show', ['id' => $article->id, 'subArticle_id' => $article->category_id]) }}">    
+                        <form method="GET" action="{{ route('articles.show', ['id' => $article->id, 'slug' => $article->slug ,'subArticle_id' => $article->category_id, 'slug_2' => $article->slug]) }}">    
                             <button>
                                 Открыть статью
                             </button>

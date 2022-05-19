@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="свобода, восприятие, наркотики, нарко">
+    <meta name="description" content="тема свободы и психоактивных веществ и их влияние на организм, мышление и сознание">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title', 'The FreeBee')</title>
+    <title>App - The @yield('title', 'free Perception')</title>
    @section('links')
         <link rel="stylesheet" href="{{ asset('/app.css') }}">
         <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
@@ -29,7 +31,9 @@
                     <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
                     <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
                     <a href="{{ route('howtostuff.drugs') }}">Психоактивные вещества</a>
+                    <a href="{{ route('howtostuff.overdose') }}">действия при передозировках</a>
                     <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
+                    <a href="{{ route('howtostuff.personal') }}">Как стать лучше?</a>
                 </div>
             @if (auth()->user() && auth()->user()->name == 'admin')
                 <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
@@ -48,7 +52,9 @@
                         <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
                         <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
                         <a href="{{ route('howtostuff.drugs') }}">Психоактивные вещества</a>
+                        <a href="{{ route('howtostuff.overdose') }}">действия при передозировках</a>
                         <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
+                        <a href="{{ route('howtostuff.personal') }}">Как стать лучше?</a>
                     </div>    
                     </div>
             </div>        

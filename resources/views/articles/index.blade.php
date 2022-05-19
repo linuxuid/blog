@@ -16,7 +16,7 @@
             <div class="content_description">
                 @foreach ($categories->articles as $article)  
                     <h2>
-                        <a href="/articles/{{ $article->id }}/{{ $categories->id }}">{{ $article->name }}
+                        <a href="/articles/{{ $article->id }}/{{ $article->slug }}/{{ $categories->id }}/{{ $categories->slug }}">{{ $article->name }}
                         </a>
                     </h2>
 
@@ -24,15 +24,15 @@
                         {{ $article->created_at }}
                     </p>
                     
-                    <a href="/articles/{{ $article->id }}/{{ $categories->id }}">
+                    <a href="/articles/{{ $article->id }}/{{ $article->slug }}/{{ $categories->id }}/{{ $categories->slug }}">
                         <img src="/images/{{ $article->image }}" alt="{{ $article->image }}">
                     </a>   
                     
                     <p>
-                        {{ $article->slug }}
+                        {{ $article->more }}
                     </p>
                     <div class="btn">
-                        <form method="GET" action="/articles/{{ $article->id }}/{{ $categories->id }}">    
+                        <form method="GET" action="/articles/{{ $article->id }}/{{ $article->slug }}/{{ $categories->id }}/{{ $categories->slug }}">    
                             <button>
                                 продолжить читать
                             </button>
@@ -71,7 +71,7 @@
                             напишите мне на почту
                         </p>
                         <button>
-                            <a href="mailto:freehaven440@outlook.com">написать</a>
+                            <a href="mailto:alexander.ruzhkov@outlook.com">написать</a>
                         </button>
                     </div>
                 </div>

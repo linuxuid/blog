@@ -49,6 +49,8 @@ Route::get('/about-hacking', [HowToStuffController::class, 'hackingPage'])->name
 Route::get('/about-physical', [HowToStuffController::class, 'physical'])->name('howtostuff.physic');
 Route::get('/about-drugs', [HowToStuffController::class, 'drugs'])->name('howtostuff.drugs');
 Route::get('/about-onion', [HowToStuffController::class, 'onion'])->name('howtostuff.onion');
+Route::get('/about-yours', [HowToStuffController::class, 'personal'])->name('howtostuff.personal');
+Route::get('/about-overdose-with-drugs', [HowToStuffController::class, 'overDose'])->name('howtostuff.overdose');
 
 /**
  * links
@@ -78,9 +80,9 @@ Route::get('description/{id}', [CategoriesController::class, 'informationAbout']
 /**
  * ArticlesController show index
  */
-Route::get('categories/articles/{id}', [ArticlesController::class, 'index'])->name('articles.index');
+Route::get('categories/articles/{id}/{slug}', [ArticlesController::class, 'index'])->name('articles.index');
 
-Route::get('/articles/{id}/{subArticle_id}', [OutputTopicsController::class, 'psychodelics'])->name('articles.show');
+Route::get('/articles/{id}/{slug}/{subArticle_id}/{slug_2}', [OutputTopicsController::class, 'psychodelics'])->name('articles.show');
 
 Route::get('/about-stimulators/{name}', [OutputTopicsController::class, 'stimulators'])->name('articles.stimulators');
 

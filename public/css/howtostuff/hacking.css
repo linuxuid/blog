@@ -60,3 +60,11 @@ main .content .hacking_content ol li {
 main .content .hacking_content ol li span {
     color: red;
 }
+
+@media (min-width: 280px) and (max-width: 1024px){
+    main .content .hacking_content img { 
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -30,4 +30,14 @@ class HowToStuffController extends Controller
     {
         return view('howtostuff.onion');
     }
+
+    public function personal()
+    {
+        return view('howtostuff.personal');
+    }
+
+    public function overDose()
+    {
+        return view('howtostuff.overdose');
+    }
 }

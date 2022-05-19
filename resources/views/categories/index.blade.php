@@ -25,7 +25,9 @@
                 <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
                 <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
                 <a href="{{ route('howtostuff.drugs') }}">Психоактивные вещества</a>
+                <a href="{{ route('howtostuff.overdose') }}">действия при передозировках</a>
                 <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
+                <a href="{{ route('howtostuff.personal') }}">Как стать лучше?</a>
             </div>
         @if (auth()->user() && auth()->user()->name == 'admin')
             <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
@@ -44,7 +46,9 @@
                     <a href="{{ route('howtostuff.hacking') }}">Хакинг</a>
                     <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
                     <a href="{{ route('howtostuff.drugs') }}">Психоактивные вещества</a>
+                    <a href="{{ route('howtostuff.overdose') }}">действия при передозировках</a>
                     <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
+                    <a href="{{ route('howtostuff.personal') }}">Как стать лучше?</a>
                 </div>    
                 </div>
                    
@@ -73,17 +77,17 @@
             <div class="content_description">
                 @foreach ($categories as $category)
                     <h2>
-                        <a href="{{ route('articles.index', ['id' => $category->id]) }}">{{ $category->name }}
+                        <a href="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}">{{ $category->name }}
                         </a>
                     </h2>
                     
-                    <a href="{{ route('articles.index', ['id' => $category->id]) }}"><img src="/images/{{ $category->image }}" alt="{{ $category->name }}"></a>   
+                    <a href="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}"><img src="/images/{{ $category->image }}" alt="{{ $category->name }}"></a>   
                     <p>
                         {{ $category->description }}
                     </p>
                 
                     <div class="btn">
-                        <form method="GET" action="{{ route('articles.index', ['id' => $category->id]) }}">    
+                        <form method="GET" action="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}">    
                             <button>
                                 Открыть категорию
                             </button>
@@ -120,7 +124,7 @@
                     напишите мне на почту
                 </p>
                 <button>
-                    <a href="mailto:freehaven440@outlook.com">написать</a>
+                    <a href="mailto:alexander.ruzhkov@outlook.com">написать</a>
                 </button>
             </div>
             </div>

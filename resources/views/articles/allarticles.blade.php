@@ -70,7 +70,7 @@
                         напишите мне на почту
                     </p>
                     <button>
-                        <a href="mailto:freehaven440@outlook.com">написать</a>
+                        <a href="mailto:alexander.ruzhkov@outlook.com">написать</a>
                     </button>
                 </div>
             </div>

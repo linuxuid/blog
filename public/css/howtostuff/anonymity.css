@@ -23,7 +23,9 @@ main .content .anonymity_header p {
 main .content .anonymity_content {
     width: 90%;
     margin-top: 45px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main .content .anonymity_content h3 {

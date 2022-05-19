@@ -20,7 +20,7 @@
                             Здравствуйте, я хочу поблагодарить вас за то что вы сможете предложить какую-то свою идею или статью, разумеется я опубликую в случае если она будет соответсвовать тематике этого сайта.
                         </p>
                         <p>
-                            вы можете написать мне на <a href="mailto:freehaven440@outlook.com">почту</a> или же написать в <a href="https://tlgg.ru/maharadjas" target="_blank">telegram</a>.
+                            вы можете написать мне на <a href="mailto:alexander.ruzhkov@outlook.com">почту</a> или же написать в <a href="https://tlgg.ru/maharadjas" target="_blank">telegram</a>.
                         </p>
                 </div>
                 

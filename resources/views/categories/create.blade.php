@@ -59,6 +59,15 @@
                     <form method="post" action="{{ route('categories.store') }}" enctype="multipart/form-data">
                         @csrf
                         <h2>Создать новую категорию</h2>
+                        <label for="slug">
+                            slug:
+                        </label>
+                        <input name="slug" placeholder="slug" value="{{ old('slug') }}">
+
+                        @error('slug')
+                        <span class="errorMessage">{{ $message }}</span>
+                        @enderror
+
                                 <label for="name">
                                     Имя
                                 </label>

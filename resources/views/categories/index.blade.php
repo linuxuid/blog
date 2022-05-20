@@ -26,6 +26,7 @@
                 <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
                 <a href="{{ route('howtostuff.drugs') }}">Психоактивные вещества</a>
                 <a href="{{ route('howtostuff.overdose') }}">действия при передозировках</a>
+                <a href="{{ route('howtostuff.helpPsycho') }}" target="_blank">Срочная помощь психанавтам</a>
                 <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
                 <a href="{{ route('howtostuff.personal') }}">Как стать лучше?</a>
             </div>
@@ -47,6 +48,7 @@
                     <a href="{{ route('howtostuff.physic') }}">Физическая подготовка</a>
                     <a href="{{ route('howtostuff.drugs') }}">Психоактивные вещества</a>
                     <a href="{{ route('howtostuff.overdose') }}">действия при передозировках</a>
+                    <a href="{{ route('howtostuff.helpPsycho') }}" target="_blank">Срочная помощь психанавтам</a>
                     <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
                     <a href="{{ route('howtostuff.personal') }}">Как стать лучше?</a>
                 </div>    

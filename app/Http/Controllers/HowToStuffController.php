@@ -40,4 +40,8 @@ class HowToStuffController extends Controller
     {
         return view('howtostuff.overdose');
     }
+
+    public function helpPsycho() {
+        return view('howtostuff.helpPsycho');
+    }
 }

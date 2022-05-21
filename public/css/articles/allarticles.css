@@ -10,6 +10,5 @@ main .right {
     main .content .content_description .btn button {
         position: relative;
         right: 550px;
-        /* background-color: yellow; */
     }
 }

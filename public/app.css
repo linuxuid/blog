@@ -59,7 +59,7 @@ header nav a {
 	font-size: 16px;
 	color: black;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 14px 12px;
 	text-decoration: none;
 }
 
@@ -478,7 +478,7 @@ footer .icons a:nth-child(2){
 
 	header nav .subMenu {
         height: 100vh;
-        width: 450px;
+        width: 400px;
         position: fixed;
         left: 0;
         top: 0;
@@ -518,8 +518,8 @@ footer .icons a:nth-child(2){
 
 @media (max-width: 600px){
 	header .nav .subMenu {
-		height: 100vh;
-        width: 500px;
+		height: 10vh;
+        width: 400px;
         position: fixed;
         left: 0;
         top: 0;
@@ -567,6 +567,7 @@ footer .icons a:nth-child(2){
 	 .wrapper {
 		 width: 400px;
 	 }
+
 
 	 .wrapper main .content {
 		width: 350px;

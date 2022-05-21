@@ -21,6 +21,12 @@ main .content .content_description{
     margin-bottom: 100px;
 }
 
+main .content .content_description iframe {
+	margin-left: auto;
+	margin-right: auto; 
+	width: 100%;
+}
+
 main .content .content_description img {
     margin-left: auto;
     margin-right: auto;

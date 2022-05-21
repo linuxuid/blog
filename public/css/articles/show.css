@@ -30,7 +30,8 @@ main .content .content_description img {
 
 main .content .content_description iframe {
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto; 
+	width: 100%;
 }
 
 main .content .content_description h1 {

@@ -1,13 +1,18 @@
-.wrapper {
+/* .wrapper {
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+} */
+
+.wrapper { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
 }
 
 main .content {
     width: 100%;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main .content .anonymity_header h2 {

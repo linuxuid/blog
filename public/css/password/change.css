@@ -1,7 +1,12 @@
-.wrapper {
+/* .wrapper {
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+} */
+
+.wrapper {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
 }
 

@@ -48,13 +48,13 @@ main .content .content_description p {
 main .content .content_description ul li {
     margin-top: 10px;
     font-size: 16px;
-    font-family:  Comic Sans MS, Comic Sans, cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main .content .content_description ol li {
     margin-top: 10px;
     font-size: 16px;
-    font-family:  Comic Sans MS, Comic Sans, cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main .content .content_description ul li a {

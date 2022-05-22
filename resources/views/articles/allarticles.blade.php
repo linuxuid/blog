@@ -17,19 +17,19 @@
             <div class="content_description">
                 @foreach ($articles as $article)
                     <h2>
-                        <a href="/articles/{{ $article->id }}/{{ $article->category_id }}">{{ $article->name }}</a>
+                        <a href="/articles/{{ $article->id }}/{{ $article->slug }}/{{ $article->category_id }}/{{ $article->slug }}">{{ $article->name }}</a>
                     </h2>
                     
                     <p class="date">
                         {{ $article->created_at }}
                     </p>
 
-                    <a href="/articles/{{ $article->id }}/{{ $article->category_id }}">
+                    <a href="/articles/{{ $article->id }}/{{ $article->slug }}/{{ $article->category_id }}/{{ $article->slug }} ">
                         <img src="/images/{{ $article->image }}" alt="{{ $article->image }}">
                     </a>
 
                     <p>
-                        {{ $article->slug }}
+                        {{ $article->more }}
                     </p>
 
                     <div class="btn">

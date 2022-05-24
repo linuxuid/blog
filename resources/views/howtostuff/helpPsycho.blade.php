@@ -5,9 +5,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('/css/categories/index.css') }}"> 
     <link rel="stylesheet" href="{{ asset('/css/categories/description.css') }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
 @endsection
 
@@ -96,7 +93,7 @@
                 <br>
 
                 <p>
-                    7. И теперь ты сделал глубокий выдох и большая сфера любви полностью обволакивает твое тело, твои плечи и твои ноги до кончиков пальцев, ты ощущаешь как тебе хорошо дышать! ты знаешь что ты уже счастлив и тебе больше не нужно никуда бежать и о чем-то жалеть, всё хорошо, ты совершенен!<strong style="color: red">теперь ты отпустил всё что тебя так сильно беспокоило, ты теперь свободен,</strong>
+                    7. И теперь ты сделал глубокий выдох и большая сфера любви полностью обволакивает твое тело, твои плечи и твои ноги до кончиков пальцев, ты ощущаешь как тебе хорошо дышать! ты знаешь что ты уже счастлив и тебе больше не нужно никуда бежать и о чем-то жалеть, всё хорошо, ты совершенен!<strong style="color: red">теперь ты отпустил всё что тебя так сильно беспокоило, ты теперь свободен!</strong>
                 </p>
 
                 <img src="/images/yours.jpg" alt="">

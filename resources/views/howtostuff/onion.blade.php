@@ -3,15 +3,17 @@
 @section('links')
     <link rel="stylesheet" href="{{ asset('/app.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('/css/categories/index.css') }}"> 
-    <link rel="stylesheet" href="{{ asset('/css/categories/description.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/articles/show.css') }}">
     <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
+@endsection
+
+@section('title')
+    луковичное пространство
 @endsection
 
 @section('content')
     <main>
         <div class="content">
-            <div class="content_description">
                             <h2>
                                 Onion или же Tor Browser
                             </h2>
@@ -183,7 +185,6 @@
                         <p>
                             <a href="{{ route('categories.index') }}">к категориям</a>
                         </p>
-            </div>
         </div>
     </main>
 @endsection

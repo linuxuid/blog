@@ -3,15 +3,18 @@
 @section('links')
     <link rel="stylesheet" href="{{ asset('/app.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('/css/categories/index.css') }}"> 
-    <link rel="stylesheet" href="{{ asset('/css/categories/description.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/articles/show.css') }}">
     <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
+@endsection
+
+@section('title')
+    действия при передозировках
 @endsection
 
 @section('content')
     <main>
         <div class="content">
-            <div class="content_description">
+
                 <!-- first -->
 
                     <h2>
@@ -481,7 +484,6 @@
                             Если же вы употребляете что-то от чего возможен летальный исход, не устану повторять, подготовьтесь к тому что возможны такие ситуации! Берегите себя и жизни своих друзей и близких!
                         </strong>
                     </p>
-            </div>
         </div>
     </main>
 @endsection

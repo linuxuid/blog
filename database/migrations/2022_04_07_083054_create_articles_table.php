@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('category_id');
+            $table->string('category_slug');
+            $table->string('slug');
             $table->string('name');
             $table->string('excerpt');
             $table->longText('more');

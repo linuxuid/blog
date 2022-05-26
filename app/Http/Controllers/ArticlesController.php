@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ArticlesController extends Controller
 {
-    public function index($id, $slug)
+    public function index($id)
     {
         return view('articles.index', [
-            'categories' => Category::find($id), // open article according to his `id` 
+            'categories' => Category::find($id),
         ]);
     }
 

@@ -7,6 +7,11 @@ main .content .search_description {
     width: 100%;
 }
 
+main .content .search_description h1 {
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
 main .content .search_description h2 > a {
     color: blue;
     font-weight: bold;

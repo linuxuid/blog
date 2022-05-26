@@ -7,6 +7,10 @@
     <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
 @endsection
 
+@section('title')
+    категории сайта
+@endsection
+
 @section('header') 
 <header>
     <nav>
@@ -73,30 +77,28 @@
     <main>
         <!-- main content -->
         <div class="content">
-            <div class="content_description">
                 @foreach ($categories as $category)
                     <h2>
-                        <a href="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}">{{ $category->name }}
+                        <a href="/categories/articles/{{ $category->id }}?{{ $category->slug }}">{{ $category->name }}
                         </a>
                     </h2>
                     
-                    <a href="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}"><img src="/images/{{ $category->image }}" alt="{{ $category->name }}"></a>   
+                    <a href="/categories/articles/{{ $category->id }}?{{ $category->slug }}"><img src="/images/{{ $category->image }}" alt="{{ $category->name }}"></a>   
                     <p>
                         {{ $category->description }}
                     </p>
                 
                     <div class="btn">
-                        <form method="GET" action="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}">    
+                        <form method="GET" action="/categories/articles/{{ $category->id }}&{{ $category->slug }}">    
                             <button>
                                 Открыть категорию
                             </button>
                         </form>
-                    </div><hr>
+                    </div>
                     <div class="space">
 
                     </div>
                 @endforeach
-            </div>
         </div>
 
   

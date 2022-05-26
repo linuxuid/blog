@@ -262,9 +262,10 @@ footer .icons a:nth-child(2){
 		width: 100%;
 	}
 
-	/* .wrapper main .content {
-		width: 1000px;
-	} */
+	main .content .content_description {
+		margin-left: 40px;
+		margin-right: auto;
+	}
 
 	header {
 	 width: 100%;
@@ -309,7 +310,7 @@ footer .icons a:nth-child(2){
 	
 	header nav .subMenu {
         height: 100vh;
-        width: 100vh;
+        width: 100%;
         position: fixed;
         left: 0;
         top: 0;
@@ -378,11 +379,6 @@ footer .icons a:nth-child(2){
 	main .content {
 		width: 100%;
 	}
-/* 
-	footer {
-		position: relative;
-		 bottom: 80px;
-	} */
 
     footer .menu_footer {
         width: 90%;
@@ -404,13 +400,9 @@ footer .icons a:nth-child(2){
 		width: 100%;
 	}
 
-	/* .wrapper main .content {
-		width: 900px;
-	} */
-
 	header nav .subMenu {
         height: 100vh;
-        width: 900px;
+        width: 100%;
         position: fixed;
         left: 0;
         top: 0;
@@ -421,7 +413,6 @@ footer .icons a:nth-child(2){
 	}
 
 	header nav .dropdown .dropdown-content {
-		/* display: block;  */
 		position: absolute;
 		left: 320px;
 		top: 220px;
@@ -478,7 +469,7 @@ footer .icons a:nth-child(2){
 
 	header nav .subMenu {
         height: 100vh;
-        width: 400px;
+        width: 100%;
         position: fixed;
         left: 0;
         top: 0;

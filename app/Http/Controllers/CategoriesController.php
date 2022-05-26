@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CategoriesController extends Controller
 {
@@ -13,12 +14,13 @@ class CategoriesController extends Controller
     public function index()
     {
         return view('categories.index', [
-            'categories' => Category::all()
+            'categories' => Category::all(),
+            'slug' => DB::table('categories')->select('slug')->get()
         ]);
     }
 
     /**
-     * create new category
+     * Create new category
      */
     public function create()
     {
@@ -60,15 +62,5 @@ class CategoriesController extends Controller
         if($category){
             return redirect()->route('categories.index');
         }
-    }
-
-    /**
-     * description of categories
-     */
-    public function informationAbout($id)
-    {
-        return view('categories.description', [
-            'categories' => Category::find($id)
-        ]);
     }
 }

@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 @endsection
 
+@section('title')
+    контакты
+@endsection
+
 @section('content')
     <main>
         <div class="content">

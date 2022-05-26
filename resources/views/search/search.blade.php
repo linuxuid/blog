@@ -11,11 +11,19 @@
     <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
 @endsection
 
+@section('title')
+    страница поиска
+@endsection
+
 @section('content')
 <main>
     <!-- main content -->
     <div class="content">
         <div class="search_description">
+
+            <h1>
+                Результаты поиска
+            </h1>
 
             <!-- condition for search -->
             @if($_GET['query'] && !empty($categories))  
@@ -23,7 +31,7 @@
                  <!-- categories search -->
                 @forelse ($categories as $category)
                     <h2>
-                        <a href="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}">
+                        <a href="/categories/articles/{{ $category->id }}?{{ $category->slug }}">
                             {{ $category->name }}
                         </a>
                     </h2>
@@ -33,7 +41,7 @@
                     </p>
 
                     <div class="btn">
-                        <form method="GET" action="{{ route('articles.index', ['id' => $category->id, 'slug' => $category->slug]) }}">    
+                        <form method="GET" action="/categories/articles/{{ $category->id }}?{{ $category->slug }}">    
                             <button>
                                 Открыть категорию
                             </button>
@@ -49,7 +57,7 @@
                 <!-- articles search -->
                 @forelse ($articles as $article)
                     <h2>
-                        <a href="{{ route('articles.show', ['id' => $article->id, 'slug' => $article->slug ,'subArticle_id' => $article->category_id, 'slug_2' => $article->slug]) }}">
+                        <a href="/categories/articles/{{ $article->category_slug }}/{{ $article->slug }}">
                             {{ $article->name }}
                         </a>
                     </h2>
@@ -58,7 +66,7 @@
                         {{ $article->excerpt }}
                     </p>
                     <div class="btn">
-                        <form method="GET" action="{{ route('articles.show', ['id' => $article->id, 'slug' => $article->slug ,'subArticle_id' => $article->category_id, 'slug_2' => $article->slug]) }}">    
+                        <form method="GET" action="/categories/articles/{{ $article->category_slug }}/{{ $article->slug }}">    
                             <button>
                                 Открыть статью
                             </button>

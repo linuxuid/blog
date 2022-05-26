@@ -57,7 +57,6 @@ Route::get('/help-for-psycho', [HowToStuffController::class, 'helpPsycho'])->nam
  * links
  */
 Route::get('links', [LinksPageController::class, 'index'])->name('links.links');
-
 Route::get('/links-create', [LinksPageController::class, 'create'])->name('links.create');
 Route::post('/links-upload', [LinksPageController::class, 'store'])->name('links.store');
 
@@ -73,19 +72,41 @@ Route::get('/categories', [CategoriesController::class, 'index'])->name('categor
 Route::get('/create-categories', [CategoriesController::class, 'create'])->name('categories.create');
 Route::post('/upload-categories', [CategoriesController::class, 'store'])->name('categories.store');
 
-/**
- * categories common description
- */
-Route::get('description/{id}', [CategoriesController::class, 'informationAbout'])->name('desc');
 
 /**
  * ArticlesController show index
  */
-Route::get('categories/articles/{id}/{slug}', [ArticlesController::class, 'index'])->name('articles.index');
+Route::get('/categories/articles/{id}', [ArticlesController::class, 'index'])->name('articles.index');
 
-Route::get('/articles/{id}/{slug}/{subArticle_id}/{slug_2}', [OutputTopicsController::class, 'psychodelics'])->name('articles.show');
+/**
+ * Posts
+ */
 
-Route::get('/about-stimulators/{name}', [OutputTopicsController::class, 'stimulators'])->name('articles.stimulators');
+// Psychodelics
+Route::get('/categories/articles/psychodelics-drugs/about-lsd', [OutputTopicsController::class,'lsd']);
+Route::get('/categories/articles/psychodelics-drugs/about-dmt', [OutputTopicsController::class, 'dmt']);
+Route::get('/categories/articles/psychodelics-drugs/about-2cb', [OutputTopicsController::class, 'calciumBrome']);
+Route::get('/categories/articles/psychodelics-drugs/about-mescaline', [OutputTopicsController::class, 'mescaline']);
+Route::get('/categories/articles/psychodelics-drugs/about-psylocibin', [OutputTopicsController::class, 'psylocibin']);
+Route::get('/categories/articles/psychodelics-drugs/about-nbome', [OutputTopicsController::class, 'nbome']);
+
+// Stimulators
+Route::get('/categories/articles/stimutale-substances/about-ampthetamine', [OutputTopicsController::class, 'ampthetamine']);
+Route::get('/categories/articles/stimutale-substances/about-methamphetamine', [OutputTopicsController::class, 'methamphetamine']);
+Route::get('/categories/articles/stimutale-substances/about-mdma', [OutputTopicsController::class, 'mdma']);
+Route::get('/categories/articles/stimutale-substances/about-cocaine', [OutputTopicsController::class, 'cocaine']);
+Route::get('/categories/articles/stimutale-substances/about-mephedrone', [OutputTopicsController::class, 'mephedrone']);
+
+// opiats
+Route::get('/categories/articles/opiats/about-heroine', [OutputTopicsController::class, 'heroine']);
+Route::get('/categories/articles/opiats/about-methadone', [OutputTopicsController::class, 'methadone']);
+Route::get('/categories/articles/opiats/about-morphine', [OutputTopicsController::class, 'morphine']);
+
+// cannabinoids
+Route::get('/categories/articles/cannabinoids/about-marihujanna', [OutputTopicsController::class, 'marihujanna']);
+Route::get('/categories/articles/cannabinoids/about-hashish', [OutputTopicsController::class, 'hashish']);
+Route::get('/categories/articles/cannabinoids/about-syntecis-cannabinoids', [OutputTopicsController::class, 'synteticsCannabinoid']);
+
 
 // all articles in order
 Route::get('/all-articles', [ArticlesController::class, 'allArticlesPage'])->name('articles.all');

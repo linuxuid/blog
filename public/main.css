@@ -166,7 +166,7 @@ footer .icons a:nth-child(2){
 
     header .menu .subMenu {
         height: 100vh;
-        width: 175vh;
+        width: 100%;
         position: fixed;
         left: 0;
         top: 0;
@@ -192,10 +192,10 @@ footer .icons a:nth-child(2){
 
     header .menu label.toogleMenu {
         display: block;
-        position: fixed;
+        position: absolute;
         top: 40px;
         left: 110px;
-        z-index: 6;
+        /* z-index: 6; */
         border: 2px solid grey;
         width: 140px;
     }
@@ -235,7 +235,7 @@ footer .icons a:nth-child(2){
 @media (max-width: 1024px){
     header .menu .subMenu {
         height: 100vh;
-        width: 145vh;
+        width: 100%;
         position: fixed;
         left: 0;
         top: 0;
@@ -297,7 +297,7 @@ footer .icons a:nth-child(2){
 @media (max-width: 600px){
     header .menu .subMenu {
         height: 100vh;
-        width: 75vh;
+        width: 100%;
         position: fixed;
         left: 0;
         top: 0;
@@ -309,7 +309,7 @@ footer .icons a:nth-child(2){
 
     header .menu label.toogleMenu {
         display: block;
-        position: fixed;
+        position: absolute;
         top: 40px;
         left: 60px;
         z-index: 6;
@@ -350,7 +350,7 @@ footer .icons a:nth-child(2){
 @media (max-width: 480px){
     header .menu .subMenu {
         height: 100vh;
-        width: 45vh;
+        width: 100%;
         position: fixed;
         left: 0;
         top: 10;
@@ -402,7 +402,7 @@ footer .icons a:nth-child(2){
 }
 
 @media (min-width: 280px) and (max-width: 653px) {
-    header .menu label.toogleMenu {
+    /* header .menu label.toogleMenu {
         display: block;
         position: fixed;
         top: 40px;
@@ -410,7 +410,7 @@ footer .icons a:nth-child(2){
         z-index: 6;
         border: 2px solid grey;
         width: 140px;
-    }
+    } */
 
     header .menu .search input {
         width: 200px;

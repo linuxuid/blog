@@ -27,7 +27,8 @@ main .content .note {
 main .content h1 {
 	font-size: 26px;
 	color: rgb(143, 106, 177);
-	text-align: center;
+	/* text-align: center; */
+    align-items: center;
 }
 
 main .content img {

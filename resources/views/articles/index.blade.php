@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('/css/categories/index.css') }}"> 
     <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>
+    <meta name="description" content="все статьи психоактивных веществ">
 @endsection
 
 @section('title')

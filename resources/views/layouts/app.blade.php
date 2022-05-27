@@ -6,7 +6,7 @@
     <meta name="keywords" content="свобода, восприятие, наркотики, нарко">
     <meta name="description" content="тема свободы и психоактивных веществ и их влияние на организм, мышление и сознание">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Психоактивные вещества - @yield('title', 'главная')</title>
+    <title>@yield('title', 'главная') - психоактивные вещества</title>
    @section('links')
         <link rel="stylesheet" href="{{ asset('/app.css') }}">
         <link rel="shortcut icon" type="image/png" href="{{ asset('/images/keys.png') }}"/>

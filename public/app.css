@@ -362,8 +362,8 @@ footer .icons a:nth-child(2){
 
 	header nav label.toogleMenu{
 		display: block;
-		position: fixed;
-		z-index: 7;
+		position: absolute;
+		/* z-index: 7; */
 	}
 
 	header nav input.toogleMenu:checked ~ .subMenu {

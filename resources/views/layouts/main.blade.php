@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     @show
-    <title>Ощущение жизни - @yield('title', 'The FreeBee')</title>
+    <title>@yield('title', 'The FreeBee') - Ощущение жизни</title>
 </head>
 <body>
     <div class="wrapper">

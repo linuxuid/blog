@@ -31,6 +31,7 @@
                 <a href="{{ route('howtostuff.helpPsycho') }}" target="_blank">Срочная помощь психанавтам</a>
                 <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
                 <a href="{{ route('howtostuff.personal') }}">Как стать лучше?</a>
+                <a href="{{ route('howtostuff.worldview') }}">Мировоззрение</a>
             </div>
         @if (auth()->user() && auth()->user()->name == 'admin')
             <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>
@@ -53,6 +54,7 @@
                     <a href="{{ route('howtostuff.helpPsycho') }}" target="_blank">Срочная помощь психанавтам</a>
                     <a href="{{ route('howtostuff.onion') }}">Луковичное пространство</a>
                     <a href="{{ route('howtostuff.personal') }}">Как стать лучше?</a>
+                    <a href="{{ route('howtostuff.worldview') }}">Мировоззрение</a>
                 </div>    
                 </div>
                    
@@ -80,7 +82,7 @@
         <div class="content">
                 @foreach ($categories as $category)
                     <h2>
-                        <a href="/categories/articles/{{ $category->id }}?{{ $category->slug }}">{{ $category->name }}
+                        <a href="/categories/articles/{{ $category->id }}?{{ $category->slug }}/">{{ $category->name }}
                         </a>
                     </h2>
                     

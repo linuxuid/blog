@@ -44,4 +44,8 @@ class HowToStuffController extends Controller
     public function helpPsycho() {
         return view('howtostuff.helpPsycho');
     }
+
+    public function worldview(){
+        return view('howtostuff.personal_proceed');
+    }
 }

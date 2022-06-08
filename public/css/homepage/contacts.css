@@ -1,60 +1,200 @@
 .wrapper {
-    /* font-family: 'Lato', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Arial, Helvetica, sans-serif, sans-serif;
     font-size: 15px;
 }
 
 main .content {
-    height: 100%;
+	width: 80.5%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-main .content .contacts_description {
+main .content .note, main .content .quote {
+    border: 1px solid whitesmoke;
+	color: rgb(0, 81, 255);
+    border-radius: 20px;
+    padding: 20px;
+    background: whitesmoke;
+    -webkit-box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main .content h1 {
+	font-size: 26px;
+	color: rgb(143, 106, 177);
+	text-align: center;
+	/* justify-content: center; */
+}
+
+main .content img {
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
-    margin-left: 50px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    height: 60%;
 }
 
-main .content .contacts_description .contacts_header h2 {
-    text-align: center;
+main .content h2 {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: rgb(0, 0, 0);
+}
+
+main .content .anonymity_header h1 {
+	/* align-items: center; */
+	text-align: center;
+	position: relative;
+	right: 50px;
+}
+
+main .content p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+main .content p strong {
+    color: rgb(123, 89, 155);
+}
+
+main .content h3 {
+	color: rgb(123, 89, 155);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+main .content h3 span {
+    color: black;
+}
+
+main .content a {
+	color: blue;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main .content a:hover {
+	color: red;
+	transition: 0.5s;
+	text-decoration: underline;
+}
+
+main .content ul li {
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+main .content .under_header {
+	text-align: center;
+	font-size: 14px;
+}
+
+main .content h2 {
+	text-align: center;
+}
+
+main .content ol li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 25px;
+}
+
+main .content iframe {
+	margin-left: auto;
+	margin-right: auto; 
+	width: 100%;
+}
+/* right */
+
+main .right {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    position: relative;
+    bottom: 32px;
+    right: 70px;
+    height: 500px;
+}
+main .right > span {
+    font-size: 20px;
+}
+
+
+main .right .line {
+    border-bottom: 1px solid lightgrey;
+    margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 28px;
 }
 
-main .content .contacts_description .contacts_header p {
+main .right .right_email p {
+    color: gray;
     font-size: 16px;
-    margin-bottom: 20px;
-}
-
-main .content .contacts_description .contacts_header p a {
-    color: blue;
-    text-decoration: none;
-}
-
-main .content .contacts_description .contacts_header p a:hover {
-    color: red;
-    text-decoration: underline;
-    transition: 0.5s;
-}
-
-main .content .contacts_description .contacts_content h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-main .content .contacts_description .contacts_content h3 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-main .content .contacts_description .contacts_end {
     margin-top: 20px;
 }
 
-/* adaptive */
-@media (max-width: 1280px) {
-    main .content .contacts_description {
-        width: 95%;
+main .right .email p {
+    color: gray;
+    font-size: 16px;
+
+}
+
+main .right .email button{
+    padding: 10px;
+    background-color: rgb(0, 191, 255);
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+}
+
+main .right .email button:hover {
+    background: rgba(0, 166, 255, 0.3);
+    transition: 0.5s;
+}
+
+main .right .email button > a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+main .right .email button > a:hover {
+    color: rgb(232, 49, 49);
+}
+
+main .right .right_description {
+    border-top: 1px solid lightgrey;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+
+@media (max-width: 768px){
+	.wrapper {
+		width: 100%;
+	}
+
+    .wrapper .content {
+        width: 100%;
     }
+
+	main .right {
+		display: none;
+	}
+}
+
+@media (max-width: 600px){
+	.wrapper {
+		width: 100%;
+	}
 }

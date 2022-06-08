@@ -34,6 +34,7 @@
                     <a href="{{ route('howtostuff.overdose') }}">действия при передозировках</a>
                     <a href="{{ route('howtostuff.helpPsycho') }}" target="_blank">Срочная помощь психанавтам</a>
                     <a href="{{ route('howtostuff.personal') }}">Как стать лучше?</a>
+                    <a href="{{ route('howtostuff.worldview') }}">Мировоззрение</a>
                 </div>
             @if (auth()->user() && auth()->user()->name == 'admin')
                 <a href="{{ route('login.success') }}" target="_blank">личный кабинет</a>

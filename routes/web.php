@@ -52,6 +52,7 @@ Route::get('/about-onion', [HowToStuffController::class, 'onion'])->name('howtos
 Route::get('/about-yours', [HowToStuffController::class, 'personal'])->name('howtostuff.personal');
 Route::get('/about-overdose-with-drugs', [HowToStuffController::class, 'overDose'])->name('howtostuff.overdose');
 Route::get('/help-for-psycho', [HowToStuffController::class, 'helpPsycho'])->name('howtostuff.helpPsycho');
+Route::get('/worldview', [HowToStuffController::class, 'worldview'])->name('howtostuff.worldview');
 
 /**
  * links
